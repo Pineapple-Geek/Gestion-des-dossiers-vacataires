@@ -33,6 +33,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<a href="" class="button"><p>Pièces jointes et validation</p></a>
 	</div>
 
+	<article>
+		<?php echo $contenu; ?>
+	</article>
+
 <!-- <script src="piece.js" type="text/javascript"></script> -->
 </body>
 </html>
