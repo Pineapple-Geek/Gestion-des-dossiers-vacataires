@@ -18,26 +18,35 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<section class="titre" ><p><h1>Fiche de renseignement personnel</h1></p></section>
 		<section class="logo2"><p><img src="http://www.greta-npdc.fr/wp-content/themes/greta/application/images/logo/greta_gip.png"></p></section>
 	</span>-->
-	<span class="tête">
-		<section class="logo"><img class="logo" src="<?php echo base_url("/assets"); ?>/images/logogreta.png"></section>
-		<section class="titre"><h1>FICHE DE RENSEIGNEMENT PERSONNEL</h1></section>
-		<section class="logo2"><img class="logo2" src="<?php echo base_url("/assets"); ?>/images/logoprogre.png"></section>
-	</span>
+  		<div class="row">
+  			<div class="col">
+				<img class="logo" src="<?php echo base_url("/assets"); ?>/images/logogreta.png">
+			</div>
+
+			<div class="col">
+				<h1 class="titre">FICHE DE RENSEIGNEMENT PERSONNEL</h1>
+			</div>
+
+			<div class="col">
+				<img class="logo2" src="<?php echo base_url("/assets"); ?>/images/logoprogre.png">
+			</div>
+		</div>
 
 	<!--<div id="progression">
 	<a href="formulaire1.html"> <input type="button" value="Identité et formation" class="button" style="width: 35%; height: 50px;margin-left: -230px "></a>
 	<a href="Contrat.html"> <input type="button" value="Contrat et statut" class="button" style="width: 35%; height: 50px;margin-left: 30px"></a>
 	<a href="piece.html"> <input type="button" value="Pièces jointes et validation" class="button" style="width: 35%; height: 50px;margin-left: 30px "></a>
 	</div>-->
-	<div class="btn">
-		<a href="" class="button"><p>Identité et formation</p></a>
-		<a href="" class="button"><p>Contrat et statut</p></a>
-		<a href="" class="button"><p>Pièces jointes et validation</p></a>
-	</div>
+	<br><br>
+	<nav class="navbar navbar-light bg-gradient-secondary btn">
+		<a href="" class="btn btn-success"><p class="btn-text">Identité et formation</p></a>
+		<a href="" class="btn btn-success"><p class="btn-text">Contrat et statut</p></a>
+		<a href="" class="btn btn-success"><p class="btn-text">Pièces jointes et validation</p></a>
+	</nav>
 
-	<article>
+	<div class="customcontainer">
 		<?php echo $contenu; ?>
-	</article>
+	</div>
 
 <!-- <script src="piece.js" type="text/javascript"></script> -->
 </body>
