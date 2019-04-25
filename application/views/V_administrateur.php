@@ -1,18 +1,17 @@
-<form>
-    <div class="card" style="width: auto;height: auto;vertical-align: bottom;">
-        <div class="card-body" style="text-align: center;">
-            <h2 class="card-title">Menu de l'administrateur </h2>
-        </div>
-    </div>
 
-</form>
+        <div class="card">
+            <div class="card-header cardcolor">
+                <span class="cardTitle">Administration</span>
+            </div>
+            <div class="card-body">
+                <nav class="navbar navbar-light bg-gradient-secondary btn">
+                    <a href="" class="btn btn-success"><p class="btn-text">Création de compte</p></a>
+                    <a href="" class="btn btn-success"><p class="btn-text">Modification de compte</p></a>
+                    <a href="" class="btn btn-success"><p class="btn-text">Suppression de compte</p></a>
+                </nav>
 
-    <div class="col">
-        <div class="form-row justify-content-center">
-            <div class="col bg-light">
-                <label for="creation" class="col-sm-5 col-form-label"></label>Création de compte <input class="input" type="button" name="creation" id="CompteCreer" value="Création" required><br><br>
-                <label for="modifier" class="col-sm-5 col-form-label"></label>Modification de compte <input class="input" type="button" name="modifier" id="CompteModifier" value="Modification" required><br><br>
-                <label for="supprimer" class="col-sm-5 col-form-label"></label>Suppression de compte <input class="input" type="button" name="supprimer" id="CompteSupprimer" value="Suppression" required>
-            <div>
+            </div>
         </div>
-    </div>
+
+
+
