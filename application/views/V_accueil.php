@@ -6,7 +6,7 @@
             <form class="form-horizontal">
                 <div class="form-row justify-content-center">
                     <div class="col bg-light">
-                        <label id="Civilité" class="col-sm-6 col-form-label text-right">Civilité :</label> <input class="input" type="checkbox">Madame</input> <input class="input" type="checkbox">Monsieur</input>
+                        <label id="Civilité" class="col-sm-6 col-form-label text-right">Civilité :</label> <input name="civilite" type="radio">Madame</input> <input name="civilite" type="radio">Monsieur</input>
                         <label for="nom" class="col-sm-6 col-form-label text-right">Nom:</label> <input class="input" type="text" name="nom" id="nom" required>
                         <label for ="nomNaiss" class="col-sm-6 col-form-label text-right">Nom de naissance:</label> <input class="input" type="text" name="nomNaiss" id="nomNaiss" required>
                         <label for="prenom" class="col-sm-6 col-form-label text-right">Prénom:</label> <input class="input" type="text" name="prenom" id="prenom" required>
