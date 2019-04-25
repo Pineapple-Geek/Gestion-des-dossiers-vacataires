@@ -20,7 +20,7 @@ class C_accueil extends CI_Controller {
 	 */
 	public function index()
 	{
-		$data['title'] = "Bienvenue sur mon site";
+		$data['title'] = "Fiche de renseignement personnel";
 		$page = $this->load->view('V_accueil', $data, true);
         $this->load->view('commun/V_template', array('contenu' => $page));
 	}
