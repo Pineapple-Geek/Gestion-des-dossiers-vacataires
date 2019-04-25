@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 ?><!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title><?php echo $title ?></title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url("/assets"); ?>/css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
@@ -39,7 +39,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</div>-->
 	<br><br>
 	<nav class="navbar navbar-light bg-gradient-secondary btn">
-		<a href="" class="btn btn-success"><p class="btn-text">Identité et formation</p></a>
+		<a href="<?php echo base_url('index.php/C_administrateur/menu');?>" class="btn btn-success"><p class="btn-text">Identité et formation</p></a>
 		<a href="" class="btn btn-success"><p class="btn-text">Contrat et statut</p></a>
 		<a href="" class="btn btn-success"><p class="btn-text">Pièces jointes et validation</p></a>
 	</nav>
