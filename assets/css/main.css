@@ -25,25 +25,28 @@ body{
 .logo {
 	float: left;
 	padding-top: 20px;
-	padding-left: 20px;
 }
 
 .titre {
+	margin-top: 40px;
 	text-align: center;
 	font-family: 'Cinzel', serif;
-	font-size: 2.5rem;
+	font-weight: bold !important;
+	color : grey;
+	font-size: 23.5pt;
 }
 
 .logo2 {
 	float: right;
-	padding-right: 20px;
 	padding-top: 20px;
 }
 
 .btn-success {
-  min-width: 28%;
+  min-width: 33%;
   max-height: 10%;
   background: linear-gradient(to top, darkgrey, 20%, #20b2aa);
+  font-family: 'Cinzel', serif;
+  font-weight: bold !important;
 }
 .btn-text {
   font-size: 1.4rem; 
@@ -54,4 +57,10 @@ body{
 	max-width: 85%;
 	margin-right: auto;
   	margin-left: auto;	
+}
+
+.navbar{
+	max-width: 88%;
+	margin-right: auto;
+  	margin-left: auto;
 }

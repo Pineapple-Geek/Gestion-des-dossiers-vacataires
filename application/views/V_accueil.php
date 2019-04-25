@@ -1,18 +1,18 @@
-<form>
+
 <div class="row">
-    <div class="col bg-success"><h2>Identité </h2></div>
-</div>
-<div class="w-100">
+<div class="col bg-success"><h2>Identité </h2></div>
+<div class="w-100"></div>
     <div class="col">
+    	<form class="form-horizontal">
     	<div class="form-row justify-content-center">
 			<div class="col bg-light">
-				<label id="Civilité">Civilité :</label> <input class="input" type="checkbox">Madame <input class="input" type="checkbox">Monsieur <br><br>
-				<label for="nom" class="col-sm-2 col-form-label">Nom:</label> <input class="input" type="text" name="nom" id="nom" required><br><br>
-				<label for ="nomNaiss" class="col-sm-2 col-form-label">Nom de naissance:</label> <input class="input" type="text" name="nomNaiss" id="nomNaiss" required><br><br>
-				<label for="prenom" class="col-sm-2 col-form-label">Prénom:</label> <input class="input" type="text" name="prenom" id="prenom" required> <br><br>
-				<label class="col-sm-2 col-form-label">Date de Naissance:</label> <input class="input" class="date" type="Date"> <br><br>
-				<label class="col-sm-2 col-form-label">Lieu de Naissance:</label> <input class="input" type="text" name="fullname"> <br><br>
-				<label class="col-sm-2 col-form-label">Département de Naissance:</label> <input class="input" type="text" name="fullname">
+				<label id="Civilité">Civilité :</label> <input class="input" type="checkbox">Madame <input class="input" type="checkbox">Monsieur</input>
+				<label for="nom" class="col-sm-6 col-form-label">Nom:</label> <input class="input" type="text" name="nom" id="nom" required>
+				<label for ="nomNaiss" class="col-sm-6 col-form-label">Nom de naissance:</label> <input class="input" type="text" name="nomNaiss" id="nomNaiss" required>
+				<label for="prenom" class="col-sm-6 col-form-label">Prénom:</label> <input class="input" type="text" name="prenom" id="prenom" required> 
+				<label class="col-sm-6 col-form-label">Date de Naissance:</label> <input class="input" class="date" type="Date"> 
+				<label class="col-sm-6 col-form-label">Lieu de Naissance:</label> <input class="input" type="text" name="fullname"> 
+				<label class="col-sm-6 col-form-label">Département de Naissance:</label> <input class="input" type="text" name="fullname">
 			</div>
 			
 			<div class="col bg-light">
@@ -39,7 +39,7 @@
 			</div>
 		</div>
 	</div>
-  </div>
+</div>
 	<section >
 		<header>
 			<h2>Formation initiale et continue </h2>

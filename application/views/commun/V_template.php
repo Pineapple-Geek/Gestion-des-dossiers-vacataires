@@ -18,6 +18,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<section class="titre" ><p><h1>Fiche de renseignement personnel</h1></p></section>
 		<section class="logo2"><p><img src="http://www.greta-npdc.fr/wp-content/themes/greta/application/images/logo/greta_gip.png"></p></section>
 	</span>-->
+	<div class="customcontainer">
   		<div class="row">
   			<div class="col">
 				<img class="logo" src="<?php echo base_url("/assets"); ?>/images/logogreta.png">
@@ -31,6 +32,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<img class="logo2" src="<?php echo base_url("/assets"); ?>/images/logoprogre.png">
 			</div>
 		</div>
+	</div>
 
 	<!--<div id="progression">
 	<a href="formulaire1.html"> <input type="button" value="Identité et formation" class="button" style="width: 35%; height: 50px;margin-left: -230px "></a>
