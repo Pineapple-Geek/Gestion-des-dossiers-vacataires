@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class C_accueil extends CI_Controller {
+class C_identite extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -20,8 +20,8 @@ class C_accueil extends CI_Controller {
 	 */
 	public function index()
 	{
-		$data['title'] = "Fiche de renseignement personnel";
-		$page = $this->load->view('V_accueil', $data, true);
+		$data['title'] = "Identité - Fiche de renseignement personnel";
+		$page = $this->load->view('V_identite', $data, true);
         $this->load->view('commun/V_template', array('contenu' => $page));
 	}
 }
