@@ -3,7 +3,7 @@
         <span class="cardTitle">Création de compte</span>
     </div>
     <div class="card-body">
-        <form class="form-horizontal" action="<?php echo base_url('index.php/C_administrateur/validation'); ?>" method="post">
+        <form class="form-horizontal" action="<?php echo site_url('C_administrateur/validation'); ?>" method="post">
             <div class="form-row justify-content-center">
                 <div class="col bg-light">
                     <label for="login" class="col-sm-5 col-form-label text-right">Login:</label> <input class="input" type="text" name="login" id="login" required><br>
