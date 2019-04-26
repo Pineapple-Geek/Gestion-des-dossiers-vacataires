@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> 'mysql:host=localhost;dbname=projet_stage;charset=utf8',
-	'hostname' => '',
+	'hostname' => 'localhost',
 	'username' => 'root',
 	'password' => '',
-	'database' => '',
+	'database' => 'projet_stage',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
