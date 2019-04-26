@@ -33,6 +33,10 @@ body{
   margin-bottom: 0; 
 }
 
+.card{
+    width: 100%;
+}
+
 .cardTitle {
   font-size: 15pt;
   color: whitesmoke;
@@ -41,7 +45,7 @@ body{
 }
 
 .cardMargin {
-  margin-top: 10px; 
+  margin-top: 10px;
 }
 
 .cardcolor{
@@ -97,4 +101,59 @@ body{
 .tableAdmin {
 	background-color: gray;
 	color: whitesmoke;
+}
+
+.selectFontSize2{
+	font-size: 12.8px;
+	font-weight: bold !important;
+}
+
+/*----------------------------------------------------------------- Contrat -----------------------------------------------------------------------------*/
+
+.cardBody{
+	font-family: 'Cinzel', serif;
+	font-size: 15px;
+}
+
+.cardBodyTitle{
+	margin-left: 100px;
+	font-weight: bold!important;
+}
+
+.selectFontSize{
+	font-size: 12px;
+	font-weight: bold !important;
+}
+
+.quotiteMargin{
+	margin-top: 27px;
+}
+
+.matiereMargin{
+	margin-left: 4px;
+}
+.matiereMargin2{
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+.niveauMargin{
+	margin-top: 31px;
+}
+
+.datefinMargin{
+	margin-top: 36px;
+}
+
+.cardTextMargin{
+	margin-top: 36px;
+}
+
+.cardTextMargin2{
+	margin-top: 30px;
+}
+
+.cardImageValid{
+	width: 25px;
+	margin-bottom: 14px;
 }

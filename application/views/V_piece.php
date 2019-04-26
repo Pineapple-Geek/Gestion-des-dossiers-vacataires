@@ -1,3 +1,55 @@
+<div class="row">
+	<div class="card">
+	  <div class="card-header cardcolor"><span class="cardTitle">Document à fournir</span></div>
+	  <div class="card-body cardBody">
+
+	    	<div class="d-inline-block col-sm-4 text-right">
+	    		<p class="card-text"><img class="cardImageValid" src="<?php echo base_url("/assets/images/"); ?>valider.png"></p>
+				<p class="card-text"><img class="cardImageValid" src="<?php echo base_url("/assets/images/"); ?>valider.png"></p>
+				<p class="card-text"><img class="cardImageValid" src="<?php echo base_url("/assets/images/"); ?>valider.png"></p>
+				<p class="card-text"><img class="cardImageValid" src="<?php echo base_url("/assets/images/"); ?>valider.png"></p>
+	    	</div>
+
+	    	<div class="d-inline-block col-sm-4">
+	    		<p class="card-text cardTextMargin">Un relevé d'identité bancaire ou postal</p>
+				<p class="card-text cardTextMargin">Une copie de l'attestation de sécurité sociale</p>
+				<p class="card-text cardTextMargin">Une copie recto verso de la carte d'identité</p>
+				<p class="card-text cardTextMargin">Un curriculum mis à jour</p>
+	    	</div>
+
+	    	<div class="d-inline-block col-sm-2 text-left">
+	    		<p class="card-text cardTextMargin2"><input class="ajouter" type="file"></p>
+				<p class="card-text cardTextMargin2"><input class="ajouter" type="file"></p>
+				<p class="card-text cardTextMargin2"><input class="ajouter" type="file"></p>
+				<p class="card-text cardTextMargin2"><input class="ajouter" type="file"></p>
+	    	</div>
+
+	  </div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="card">
+	  <div class="card-body cardBody">
+	  	Les informations receuillies font l'objet d'un traitement informatique déstiné à rédiger votre contrat de travail et assurer le suivi de l'activité du GRETA.
+ 		Les destinataires des données sont le service de paye; le service des ressources humaines.
+		Conformément à la loi "informatique et libertés" , vous bénéficiez d'un droit d'accés et de rectification aux informations qui vous concernent.
+		Si vous souhaitez exercer ce droit et obtenir communication des informartions vous concernant, veuillez vous adresser au service ressources humaines.
+		Vous pouvez également, pour des motifs légitimes , vous opposez au traitement des donées vous concernant.
+	  </div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="card">
+	  <div class="card-body cardBody">
+
+	  </div>
+	</div>
+</div>
+
+
+
 <section class="cadre">
 <div class="grille2">
 		<section>
@@ -19,7 +71,7 @@
  		</section>
 
 		<section>
-			<p> <input class="ajouter" type="file"></p>
+			<p><input class="ajouter" type="file"></p>
 			<p><input class="ajouter" type="file"></p>
 			<p><input class="ajouter" type="file"></p>
 			<p><input class="ajouter" type="file"></p>
