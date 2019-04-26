@@ -21,9 +21,9 @@
                     <div class="col bg-light">
                         <label class="col-sm-4 col-form-label text-right labelMarginTop">Adresse:</label> <input class="input" type="text" name="fullname">
                         <label class="col-sm-4 col-form-label text-right">Ville:</label> <input class="input" type="text" name="fullname">
-                        <label class="col-sm-4 col-form-label text-right">Code Postal:</label> <input class="input" type="text" name="fullname">
+                        <label class="col-sm-4 col-form-label text-right">Code Postal:</label> <input class="input" type="number" name="fullname">
                         <label class="col-sm-4 col-form-label text-right">Pays:</label> <input class="input" type="text" name="fullname">
-                        <label class="col-sm-4 col-form-label text-right">N°Tel:</label> <input class="input" type="text" name="fullname">
+                        <label class="col-sm-4 col-form-label text-right">N°Tel:</label> <input class="input" type="number" name="fullname">
                         <label class="col-sm-4 col-form-label text-right labelMarginBottom">Ville:</label> <input class="input" type="text" name="fullname">
                     </div>
 
@@ -33,7 +33,7 @@
                         <label class="col-sm-6 col-form-label text-right">Adresse mail académique:</label> <input class="input" type="text" name="fullname">
                         <label class="col-sm-6 col-form-label text-right">Adresse mail perso:</label> <input class="input" type="text" name="fullname">
                         <label class="col-sm-6 col-form-label text-right">Nombre d'enfants:</label> <input class="input" type="text" name="fullname" >
-                        <label class="col-sm-6 col-form-label text-right labelMarginBottom">Code Postal :</label> <input class="input" type="text" name="fullname">
+                        <label class="col-sm-6 col-form-label text-right labelMarginBottom">Code Postal :</label> <input class="input" type="number" name="fullname">
                     </div>
                 </div>
         </div>
