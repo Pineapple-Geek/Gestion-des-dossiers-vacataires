@@ -15,4 +15,28 @@ class M_administrateur extends CI_Model {
         return $query->result_array(); //conversion en tableau PH
     }
 
+    public function select_compte_by_id($id)
+    {
+        $query = $this->db->select('*')
+            ->from('utilisateur')
+            ->where('idUtilisateur', $id)
+            ->get();
+        return $query->result_array(); //conversion en tableau PH
+    }
+
+    public function create_account($prm){
+        $this->db->insert('utilisateur', $prm);
+    }
+
+    public function update_account($prm,$id)
+    {
+        $this->db->where('idUtilisateur', $id);
+        $this->db->update('utilisateur', $prm);
+    }
+
+    public function delete_account($id)
+    {
+        $this->db->delete('utilisateur', array('idUtilisateur' => $id));
+    }
+
 }
