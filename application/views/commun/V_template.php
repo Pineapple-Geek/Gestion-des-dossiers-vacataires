@@ -40,9 +40,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<a href="piece.html"> <input type="button" value="Pièces jointes et validation" class="button" style="width: 35%; height: 50px;margin-left: 30px "></a>
 	</div>-->
 	<nav class="navbar navbar-light bg-gradient-secondary btn">
-		<a href="<?php echo base_url('index.php/C_administrateur');?>" class="btn btn-success"><p class="btn-text">Identité et formation</p></a>
-		<a href="" class="btn btn-success"><p class="btn-text">Contrat et statut</p></a>
-		<a href="" class="btn btn-success"><p class="btn-text">Pièces jointes et validation</p></a>
+		<a href="<?php echo base_url();?>" class="btn btn-success"><p class="btn-text">Identité et formation</p></a>
+		<a href="<?php echo site_url('C_contrat');?>" class="btn btn-success"><p class="btn-text">Contrat et statut</p></a>
+		<a href="<?php echo site_url('C_piece');?>" class="btn btn-success"><p class="btn-text">Pièces jointes et validation</p></a>
 	</nav>
 
 	<div class="customcontainer">
