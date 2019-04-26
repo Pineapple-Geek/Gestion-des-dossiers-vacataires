@@ -4,9 +4,9 @@
     </div>
     <div class="card-body">
         <nav class="navbar navbar-light bg-gradient-secondary btn">
-            <a href="" class="btn btn-success"><p class="btn-text">Création de compte</p></a>
-            <a href="" class="btn btn-success"><p class="btn-text">Modification de compte</p></a>
-            <a href="" class="btn btn-success"><p class="btn-text">Suppression de compte</p></a>
+            <a href="<?php echo base_url('index.php/C_administrateur/creation'); ?>" class="btn btn-success"><p class="btn-text">Création de compte</p></a>
+            <a href="<?php echo base_url('index.php/C_administrateur/modification'); ?>" class="btn btn-success"><p class="btn-text">Modification de compte</p></a>
+            <a href="<?php echo base_url('index.php/C_administrateur/suppression'); ?>" class="btn btn-success"><p class="btn-text">Suppression de compte</p></a>
         </nav>
         <table class="table">
             <thead>

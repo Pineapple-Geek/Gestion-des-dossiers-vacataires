@@ -15,4 +15,8 @@ class M_administrateur extends CI_Model {
         return $query->result_array(); //conversion en tableau PH
     }
 
+    public function create_account($prm){
+        $this->db->insert('utilisateur', $prm);
+    }
+
 }
