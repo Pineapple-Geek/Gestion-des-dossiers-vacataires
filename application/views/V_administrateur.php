@@ -18,24 +18,14 @@
             </tr>
             </thead>
             <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Nom1</td>
-                <td>Prenom1</td>
-                <td>Agent de paie</td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Nom2</td>
-                <td>Prenom2</td>
-                <td>Agent de paie</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>Nom3</td>
-                <td>Prenom3</td>
-                <td>Agent de paie</td>
-            </tr>
+            <?php foreach ($liste as $row){?>
+                <tr>
+                    <th scope="row"><?php echo $row['idUtilisateur'];?></th>
+                    <td><?php echo $row['Nom'];?></td>
+                    <td><?php echo $row['Prenom'];?></td>
+                    <td><?php echo $row['type'];?></td>
+                </tr>
+            <?php } ?>
             </tbody>
         </table>
     </div>
