@@ -30,9 +30,10 @@ class C_administrateur extends CI_Controller {
     }
 
     public function validation(){
+        $passwordhash = password_hash($this->input->post("Password"), PASSWORD_DEFAULT);
         $formulaire = array(
             'login' =>$this->input->post('login'),
-            'password' => $this->input->post('Password'),
+            'password' => $passwordhash,
             'Nom'=>$this->input->post('Nom'),
             'Prenom'=>$this->input->post('Prénom'),
             'type'=>$this->input->post('type')
