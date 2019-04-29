@@ -8,7 +8,7 @@
             <div class="form-row justify-content-center">
                 <div class="col rowmargin">
                     <label for="login" class="col-sm-6 col-form-label text-right" >Identifiant:</label> <input class="input" type="text" name="login" id="login"  required><br>
-                    <label for="mdp" class="col-sm-6 col-form-label text-right">Mots de passe:</label> <input class="input" type="text" name="mdp" id="mdp" required><br>
+                    <label for="mdp" class="col-sm-6 col-form-label text-right">Mots de passe:</label> <input class="input" type="password" name="mdp" id="mdp" required><br>
                     <nav class="navbar navbar-light bg-gradient-secondary btn">
                         <input  class="btn btn-success" type="submit" style="margin: auto"><p class="btn-text"></p></input>
                     </nav>
