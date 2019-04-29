@@ -38,4 +38,8 @@ class C_connexion extends CI_Controller {
             redirect('C_administrateur','refresh');
         }
     }
+    public function deconnexion(){
+        session_destroy();
+        redirect('C_identite','refresh');
+    }
 }
