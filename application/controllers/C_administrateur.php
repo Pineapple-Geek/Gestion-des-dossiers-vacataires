@@ -85,4 +85,8 @@ class C_administrateur extends CI_Controller {
         $page = $this->load->view('V_administrateur', $data, true);
         $this->load->view('commun/V_template_nobutton', array('contenu' => $page));
     }
+    public function changePass($password) {
+        $passwordhash = password_hash($password, PASSWORD_DEFAULT);
+        redirect($passwordhash);
+    }
 }

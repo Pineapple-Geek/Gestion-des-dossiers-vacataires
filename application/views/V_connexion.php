@@ -4,7 +4,7 @@
         <span class="cardTitle">Connexion</span>
     </div>
     <div class="card-body">
-        <form class="form-horizontal" action="<?php echo site_url('C_connexion/validation'); ?>" method="post">
+        <form class="form-horizontal" action="<?php echo site_url('C_connexion/connexion'); ?>" method="post">
             <div class="form-row justify-content-center">
                 <div class="col rowmargin">
                     <label for="login" class="col-sm-6 col-form-label text-right" >Identifiant:</label> <input class="input" type="text" name="login" id="login"  required><br>
