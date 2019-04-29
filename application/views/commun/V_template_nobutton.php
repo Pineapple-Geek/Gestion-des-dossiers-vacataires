@@ -35,7 +35,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </div>
 </div>
-
+<?php if (isset($_SESSION["loginok"])) { // si la session n'est pas connectée, afficher le formulaire de connexion'?>
 <div class="customcontainer2">
 <nav class="navbar navbar-expand-lg navbar-light bg-gradient-secondary">
   <div class="collapse navbar-collapse">
@@ -52,6 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   </div>
 </nav>
 </div>
+<?php } ?>
 
 <!--<div id="progression">
 <a href="formulaire1.html"> <input type="button" value="Identité et formation" class="button" style="width: 35%; height: 50px;margin-left: -230px "></a>
