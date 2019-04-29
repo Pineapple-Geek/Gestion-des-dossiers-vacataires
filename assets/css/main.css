@@ -157,3 +157,23 @@ body{
 	width: 25px;
 	margin-bottom: 14px;
 }
+
+/*----------------------------------------------------------------- Pieces -----------------------------------------------------------------------------*/
+
+.cardBody2{
+	font-family: 'Cinzel', serif;
+}
+
+.cardText{
+	font-weight: bold;
+	font-size: 10pt;
+}
+
+.labelSize{
+	width: 120px;
+	margin-left: 12px;
+}
+
+.labelWeight{
+	font-weight: bold;
+}

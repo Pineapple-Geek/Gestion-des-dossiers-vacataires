@@ -3,7 +3,7 @@
 	  <div class="card-header cardcolor"><span class="cardTitle">Document à fournir</span></div>
 	  <div class="card-body cardBody">
 
-	    	<div class="d-inline-block col-sm-4 text-right">
+	    	<div class="d-inline-block col-sm-3 text-right">
 	    		<p class="card-text"><img class="cardImageValid" src="<?php echo base_url("/assets/images/"); ?>valider.png"></p>
 				<p class="card-text"><img class="cardImageValid" src="<?php echo base_url("/assets/images/"); ?>valider.png"></p>
 				<p class="card-text"><img class="cardImageValid" src="<?php echo base_url("/assets/images/"); ?>valider.png"></p>
@@ -29,8 +29,8 @@
 </div>
 
 <div class="row">
-	<div class="card">
-	  <div class="card-body cardBody">
+	<div class="card cardMargin cardcolor cardText">
+	  <div class="card-body cardBody2">
 	  	Les informations receuillies font l'objet d'un traitement informatique déstiné à rédiger votre contrat de travail et assurer le suivi de l'activité du GRETA.
  		Les destinataires des données sont le service de paye; le service des ressources humaines.
 		Conformément à la loi "informatique et libertés" , vous bénéficiez d'un droit d'accés et de rectification aux informations qui vous concernent.
@@ -39,74 +39,43 @@
 	  </div>
 	</div>
 </div>
-
+<form>
 <div class="row">
-	<div class="card">
+	<div class="card cardMargin">
 	  <div class="card-body cardBody">
+
+	  		<div class="form-check">
+			<input class="form-check-input" type="checkbox" value="" required>
+				<label class="col-md-8 form-check-label labelWeight" for="defaultCheck1">
+				En cochant cette case je déclare sur l'honneur l'exactitude  des renseignements que j'ai fournis.
+				</label>
+			</div>
+
+	  		<div class="form-group row">
+		    <label class="labelSize col-form-label text-right">Je soussigné(e):</label>
+				<div class="col-sm-2">
+					<input type="text" class="form-control" required>
+				</div>
+			</div>
+
+			<div class="form-group row">
+		    <label class="labelSize col-form-label text-right">Date:</label>
+			    <div class="col-sm-2">
+			      <input type="date" class="form-control" required>
+			    </div>
+			</div>
 
 	  </div>
 	</div>
 </div>
 
-
-
-<section class="cadre">
-<div class="grille2">
-		<section>
-			<p><img class="valider" src="<?php echo base_url("/assets/images/"); ?>valider.png"></p>
-			<p><img class="valider" src="<?php echo base_url("/assets/images/"); ?>valider.png"></p>
-			<p><img class="valider" src="<?php echo base_url("/assets/images/"); ?>valider.png"></p>
-			<p><img class="valider" src="<?php echo base_url("/assets/images/"); ?>valider.png"></p>
-		</section>
-
-		<section>
-			<p class="detail">Un relevé d'identité bancaire ou postal</p>
-
-			<p class="detail">Une copie de l'attestation de sécurité sociale</p>
-
-			<p class="detail">Une copie recto verso de la carte d'identité</P>
-
-			<p class="detail">Un curriculum mis à jour</P>
-
- 		</section>
-
-		<section>
-			<p><input class="ajouter" type="file"></p>
-			<p><input class="ajouter" type="file"></p>
-			<p><input class="ajouter" type="file"></p>
-			<p><input class="ajouter" type="file"></p>
-		</section>
+<div class="row">
+    <div class="col-sm-1">
+        <input type="submit" value="Précédent" class="inputcolor">
+    </div>
+    <div class="col-sm-1 offset-sm-10">
+        <input type="submit" value="Suivant" class="inputcolor">
+    </div>
 </div>
 
-
-<section class="info">
-		Les informations receuillies font l'objet d'un traitement informatique déstiné à rédiger votre contrat de travail et assurer le suivi de l'activité du GRETA.
- 		Les destinataires des données sont le service de paye; le service des ressources humaines.
-		Conformément à la loi "informatique et libertés" , vous bénéficiez d'un droit d'accés et de rectification aux informations qui vous concernent.
-		Si vous souhaitez exercer ce droit et obtenir communication des informartions vous concernant, veuillez vous adresser au service ressources humaines.
-		Vous pouvez également, pour des motifs légitimes , vous opposez au traitement des donées vous concernant.
-</section>
-
-	<section class="fin">
-		<aside class="checkbox">
-			 <input type="checkbox" name="checkbox" value="checkbox">En cochant cette case je déclare sur l'honneur l'exactitude  des renseignements que j'ai fournis.
-		<adside><br>
-
-		<aside class="soussigne">
-			<label> Je soussigné(e): </label><br><br>
-			<label class="date"> Date: </label><br>
-		</aside>
-		<aside>
-			<input class="signature" type="texte" name="nom et prenom"><br><br>
-			<input class="signature" type="texte" name="date">
-		</aside>
-	</section>
-</section>
-
-	<footer>
-		<section>
-			<input type="submit" value="Valider" id="bouton1">
-			<a href="Contrat.html"><input type="submit" value="Précédent" id="bouton2"></a>
-		</section>
-
-	</footer>
+</form>
