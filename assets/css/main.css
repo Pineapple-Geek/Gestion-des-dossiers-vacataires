@@ -58,6 +58,12 @@ body{
   	margin-left: auto;	
 }
 
+.customcontainer2{
+	max-width: 85%;
+	margin-right: 25px;
+  	margin-left: auto;	
+}
+
 .navbar{
 	max-width: 88%;
 	margin-right: auto;
