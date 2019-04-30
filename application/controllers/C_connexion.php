@@ -24,19 +24,24 @@ class C_connexion extends CI_Controller {
         $result = $this->M_connexion->verif_connexion($newLogin);
         if(count($result)!=0){
             $user=$result[0];
-            if(password_verify($newPassword, $user["mdp"])){
+            if(password_verify($newPassword, $user["password"])){
 
                 $_SESSION["loginok"]= array("idUtilisateur"=>$user["idUtilisateur"], "login"=>$user["login"], "password" => $user["password"],"Nom" => $user["Nom"], "Prenom" => $user["Prenom"], "type" => $user["type"]);
             }
+            if ($user["type"] == "Agent de paie")
+            {
+                redirect('C_identite','refresh');
+            }
+            else
+            {
+                redirect('C_administrateur','refresh');
+            }
         }
-        if ($user["type"]== "Agent de paie")
-        {
-            redirect('C_identite','refresh');
+        else{
+            redirect('C_connexion','refresh');
         }
-        else
-        {
-            redirect('C_administrateur','refresh');
-        }
+        
+        
     }
     public function deconnexion(){
         session_destroy();
