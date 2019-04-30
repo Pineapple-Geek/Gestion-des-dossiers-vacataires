@@ -42,7 +42,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <ul class="nav navbar-nav ml-auto">
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Patrick KACZMAREK
+          <?php echo $_SESSION["loginok"]["Prenom"] . " " . $_SESSION["loginok"]["Nom"] ?>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="<?php echo site_url('C_administrateur/deconnexion');?>">Déconnexion</a>
