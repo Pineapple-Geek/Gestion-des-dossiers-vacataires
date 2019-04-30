@@ -18,14 +18,14 @@ class C_administrateur extends CI_Controller {
         $data['liste'] = $array_resultat;
         $data['title'] = "Menu administrateur";
         $page = $this->load->view('V_administrateur', $data, true);
-        $this->load->view('commun/V_template_nobutton', array('contenu' => $page));
+        $this->load->view('commun/V_template_user', array('contenu' => $page));
     }
 
     public function creation()
     {
         $data['title'] = "Création d'un nouveau compte";
         $page = $this->load->view('V_ajout_compte', $data, true);
-        $this->load->view('commun/V_template_nobutton', array('contenu' => $page));
+        $this->load->view('commun/V_template_user', array('contenu' => $page));
 
     }
 
@@ -44,7 +44,7 @@ class C_administrateur extends CI_Controller {
         $data['liste'] = $array_resultat;
         $data['title'] = "Menu administrateur";
         $page = $this->load->view('V_administrateur', $data, true);
-        $this->load->view('commun/V_template_nobutton', array('contenu' => $page));
+        $this->load->view('commun/V_template_user', array('contenu' => $page));
 
     }
 
@@ -55,7 +55,7 @@ class C_administrateur extends CI_Controller {
 
         $data['title'] = "Modification du compte";
         $page = $this->load->view('V_modification_compte', $data, true);
-        $this->load->view('commun/V_template_nobutton', array('contenu' => $page));
+        $this->load->view('commun/V_template_user', array('contenu' => $page));
     }
 
     public function modification_valider($id)
@@ -73,7 +73,7 @@ class C_administrateur extends CI_Controller {
 
         $data['title'] = "Modification du compte";
         $page = $this->load->view('V_administrateur', $data, true);
-        $this->load->view('commun/V_template_nobutton', array('contenu' => $page));
+        $this->load->view('commun/V_template_user', array('contenu' => $page));
     }
 
     public function suppression($primd)
@@ -83,10 +83,15 @@ class C_administrateur extends CI_Controller {
         $data['liste'] = $array_resultat;
         $data['title'] = "Menu administrateur";
         $page = $this->load->view('V_administrateur', $data, true);
-        $this->load->view('commun/V_template_nobutton', array('contenu' => $page));
+        $this->load->view('commun/V_template_user', array('contenu' => $page));
     }
     public function changePass($password) {
         $passwordhash = password_hash($password, PASSWORD_DEFAULT);
         redirect($passwordhash);
+    }
+
+    public function deconnexion(){
+        session_destroy();
+        redirect('C_connexion','refresh');
     }
 }
