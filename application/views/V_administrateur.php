@@ -6,12 +6,11 @@
 
         for (var i = radios.length; i--;) {
             if (radios[i].checked) {
-                value = radios[i].value;
+                 value = radios[i].value;
+                location.href= "<?php echo base_url('index.php/C_administrateur/modification/');?>"+ value;
                 break;
             }
         }
-
-        location.href= "<?php echo base_url('index.php/C_administrateur/modification/');?>"+ value
     }
 
     function choix_supprimer(){
@@ -20,12 +19,11 @@
 
         for (var i = radios.length; i--;) {
             if (radios[i].checked) {
-                value = radios[i].value;
-                break;
+                 value = radios[i].value;
+                 location.href= "<?php echo base_url('index.php/C_administrateur/suppression/');?>"+ value;
+                 break;
             }
         }
-
-        location.href= "<?php echo base_url('index.php/C_administrateur/suppression/');?>"+ value
     }
 </script>
 
@@ -35,12 +33,13 @@
     </div>
 
     <div class="card-body">
-        <form class="navbar navbar-light bg-gradient-secondary btn">
-            <a type="submit" style="background: #20B2AA" href="<?php echo base_url('index.php/C_administrateur/creation'); ?>" class="btn btn-success"><p class="btn-text">Création de compte</p></a>
-            <a  type="submit" style="background: #20B2AA; color: whitesmoke" onclick="choix_modifier()"  class="btn btn-success"><p class="btn-text">Modification de compte</p></a>
-            <a  type="submit" style="background: #20B2AA; color: whitesmoke" onclick="choix_supprimer()"  class="btn btn-success"><p class="btn-text">Suppression de compte</p></a><br><br><br>
+        <nav class="navbar navbar-light bg-gradient-secondary btn">
+            <a href="<?php echo base_url('index.php/C_administrateur/creation'); ?>" class="btn btn-success navButtonStyle"><p class="btn-text">Création de compte</p></a>
+            <a onclick="choix_modifier()"  class="btn btn-success navButtonStyle"><p class="btn-text">Modification de compte</p></a>
+            <a onclick="choix_supprimer()"  class="btn btn-success navButtonStyle"><p class="btn-text">Suppression de compte</p></a><br><br><br>
+        </nav>
 
-            <table class="table">
+        <table class="table tableSize">
                 <thead>
                 <tr class="tableAdmin">
                     <th scope="col">Id</th>
@@ -62,7 +61,6 @@
                 <?php } ?>
                 </tbody>
             </table>
-        </form>
     </div>
 
 

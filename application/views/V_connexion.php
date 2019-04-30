@@ -1,3 +1,12 @@
+<?php if (isset($_SESSION["loginok"])) { // si la session n'est pas connectée, afficher le formulaire de connexion'
+
+        if ($_SESSION["loginok"]["type"] == "Administrateur"){
+            redirect('C_administrateur','refresh');
+        }else{
+            redirect('C_identite','refresh');
+        }
+
+} else { ?>
 <div class="col-sm-4 offset-sm-4">
 <div class="card" >
     <div class="card-header cardcolor">
@@ -18,3 +27,4 @@
     </div>
 </div>
 </div>
+<?php } ?>

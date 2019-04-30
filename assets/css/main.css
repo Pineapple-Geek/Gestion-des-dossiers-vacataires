@@ -190,3 +190,16 @@ body{
 	margin-bottom: 20px;
 
 }
+
+/*----------------------------------------------------------------- Administration -----------------------------------------------------------------------------*/
+
+.navButtonStyle{
+	margin-left: 35px; 
+	color: whitesmoke!important;
+}
+
+.tableSize{
+	max-width: 88%;
+	margin-right: auto;
+  	margin-left: auto;
+}
