@@ -5,10 +5,26 @@
     </div>
 
     <div class="card-body">
-        <form class="form-inline ">
-            <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search" aria-label="Search">
-            <i class="fas fa-search" aria-hidden="true"></i>
-        </form>
+        <nav class="navbar navbar-light bg-gradient-secondary btn">
+            <form class="form-inline ">
+                <input class="form-control form-control-sm searchbar" type="text" placeholder="Search" aria-label="Search">
+                <i class="fas fa-search" aria-hidden="true"></i>
+            </form>
+        </nav>
+        <table class="table tableSize">
+            <thead>
+            <tr class="tableAdmin">
+                <th scope="col">Id</th>
+                <th scope="col">Nom</th>
+                <th scope="col">Prénom</th>
+                <th scope="col">Vérification</th>
+                <th scope="col">Action</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
     </div>
 </div>
 
