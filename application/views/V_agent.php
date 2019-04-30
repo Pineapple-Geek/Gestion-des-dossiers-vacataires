@@ -1,4 +1,4 @@
-<?php if (isset($_SESSION["loginok"]) && ($_SESSION["loginok"]["type"] == "Administrateur")) { // si la session n'est pas connectée, afficher le formulaire de connexion'?>
+<?php if (isset($_SESSION["loginok"]) && ($_SESSION["loginok"]["type"] == "Agent de paie")) { // si la session n'est pas connectée, afficher le formulaire de connexion'?>
 <div class="card">
     <div class="card-header cardcolor">
         <span class="cardTitle">Choix du dossier</span>
