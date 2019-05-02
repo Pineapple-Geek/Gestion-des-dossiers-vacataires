@@ -7,7 +7,7 @@
     <div class="card-body">
         <nav class="navbar navbar-light bg-gradient-secondary btn">
             <form class="form-inline ">
-                <input class="form-control form-control-sm searchbar" type="text" placeholder="Search" aria-label="Search">
+                <input class="form-control form-control-sm searchbar" type="text" placeholder="Recherche par nom" aria-label="Search">
                 <i class="fas fa-search" aria-hidden="true"></i>
             </form>
         </nav>

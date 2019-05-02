@@ -29,12 +29,15 @@ class C_connexion extends CI_Controller {
                 $_SESSION["loginok"]= array("idUtilisateur"=>$user["idUtilisateur"], "login"=>$user["login"], "password" => $user["password"],"Nom" => $user["Nom"], "Prenom" => $user["Prenom"], "type" => $user["type"]);
                 if ($user["type"] == "Agent de paie")
                 {
-                    redirect('C_identite','refresh');
+                    redirect('C_agent','refresh');
                 }
                 else
                 {
                     redirect('C_administrateur','refresh');
                 }
+            }
+            else{
+                redirect('C_connexion','refresh');
             }
         }
         else{

@@ -3,7 +3,7 @@
         if ($_SESSION["loginok"]["type"] == "Administrateur"){
             redirect('C_administrateur','refresh');
         }else{
-            redirect('C_identite','refresh');
+            redirect('C_agent','refresh');
         }
 
 } else { ?>
