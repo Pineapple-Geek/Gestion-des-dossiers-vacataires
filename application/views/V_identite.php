@@ -28,45 +28,12 @@
                     </div>
 
                     <div class="col">
-                        <label class="col-sm-6 col-form-label text-right labelMarginTop">N°INSEE + CLE:</label> <input class="input" type="text" name="fullname">
-                        <label class="col-sm-6 col-form-label text-right">Date de début d'activité:</label> <input class="input" class="date"type="date">
+                        <label class="col-sm-6 col-form-label text-right labelMarginTop">N° Sécurité Sociale:</label> <input class="input" type="text" name="fullname">
                         <label class="col-sm-6 col-form-label text-right">Adresse mail académique:</label> <input class="input" type="text" name="fullname">
                         <label class="col-sm-6 col-form-label text-right">Adresse mail perso:</label> <input class="input" type="text" name="fullname">
-                        <label class="col-sm-6 col-form-label text-right">Nombre d'enfants:</label> <input class="input" type="text" name="fullname" >
-                        <label class="col-sm-6 col-form-label text-right labelMarginBottom">Code Postal :</label> <input class="input" type="number" name="fullname">
+                        <label class="col-sm-6 col-form-label text-right labelMarginBottom2">Code Postal :</label> <input class="input" type="number" name="fullname">
                     </div>
                 </div>
-        </div>
-    </div>
-    <div class="card cardMargin">
-        <div class="card-header cardcolor"><span class="cardTitle">Formation initiale et continue</span></div>
-
-        <div class="card-body cardBody">
-            <div class="form-row justify-content-center">
-
-                <div class="col">
-                    <label class="col-sm-5 col-form-label text-right labelMarginTop2">Diplôme obtenu :</label>
-                    <select class="selectFontSize2" required name="select">
-                        <option>Aucun diplôme (Code 8 - Niv 5bis)</option>
-                        <option>Beta</option>
-                        <option>Delta</option>
-                    </select>
-                    <label class="col-sm-5 col-form-label text-right">Intitulé du dipôme :</label> <input class="input" type="text" name="fullname" size="26">
-                </div>
-
-                <div class="col">
-                    <p class="text-center"><u>Formation initiale : </u></p>
-                    <label class="col-sm-2 col-form-label text-right">Du</label> <input class="input" class="date" type="date" ><label class="text-Date">Au</label><input class="input" class="date" type="date"><br>
-                    <label class="col-sm-2 col-form-label text-right">Du</label> <input class="input" class="date" type="date" ><label class="text-Date">Au</label><input class="input" class="date" type="date"><br>
-                    <label class="col-sm-2 col-form-label text-right">Du</label> <input class="input" class="date" type="date" ><label class="text-Date">Au</label><input class="input" class="date" type="date"><br>
-                </div>
-
-                <div class="col">
-                    <label class="col-sm-6 col-form-label text-right labelMarginTop3">Intitulé de la formation :</label> <input class="input" type="text" name="fullname">
-                    <label class="col-sm-6 col-form-label text-right">Intitulé de la formation :</label> <input class="input" type="text" name="fullname">
-                    <label class="col-sm-6 col-form-label text-right">Intitulé de la formation :</label> <input class="input" type="text" name="fullname">
-                </div>
-            </div>
         </div>
     </div>
 </div>
@@ -78,3 +45,7 @@
 </div>
 
 </form>
+
+<script type="text/javascript">
+    window.onload = function() { alert("Veuillez vous munir des pièces justificative avant de remplir ce formulaire!"); };
+</script>

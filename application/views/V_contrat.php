@@ -26,17 +26,6 @@
                             <option>Vacataire non titulaire</option>
                             <option>Vacataire titulaire en HS</option>
                         </select><br>
-                        <label class="col-sm-6 col-form-label text-right">Grade : </label>
-                        <input type="text" name="">
-
-                        <label class="col-sm-6 col-form-label text-right">Matière Eneignées en formation initiale :</label>
-                        <input type="text" name=""><label class="matiereMargin2">/</label><input type="text" name=""><br>
-                        <label class="col-sm-6 col-form-label text-right matiereMargin"></label><input type="text" name=""><label class="matiereMargin2">/</label><input type="text" name="">
-                    </div>
-
-                    <div class="col-sm-5">
-                        <label class="col-sm-6 col-form-label text-right quotiteMargin">Quotité : </label>
-                        <input type="text" name=""><br>
                         <label class="col-sm-6 col-form-label text-right">Catégorie : </label>
                         <select class="selectFontSize" required>
                             <option> - </option>
@@ -45,9 +34,7 @@
                             <option>Agrégé</option>
                             <option>Certifié</option>
                             <option>PLP</option>
-                            <option>PEGC</option>
                             <option>Instituteur, Professeur des écoles</option>
-                            <option>Conseiller d'orientation</option>
                             <option>Personnel d'éducation autre</option>
                             <option></option>
                             <option style="color: grey;">Direction</option>
@@ -66,13 +53,8 @@
                             <option style="color: grey;">Autres</option>
                             <option style="color: grey;">----------------------------------</option>
                             <option>Personnel de service</option>
-                            <option>Personnel d'inspection</option>
-                            <option>Autres postes gagé titulaire ou titulaire HS</option>
-                            <option>Personnel non titulaire</option>
-                            <option>Prestataire de service ou auto- entrepreneur</option>
-                        </select><br>
-                        <label class="col-sm-6 col-form-label text-right">Indice : </label>
-                        <input type="text" name=""><br>
+                            <option>Prestataire de service ou auto-entrepreneur</option>
+                        </select>
                     </div>
                 </div>
         </div>
