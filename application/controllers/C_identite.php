@@ -24,4 +24,34 @@ class C_identite extends CI_Controller {
 		$page = $this->load->view('V_identite', $data, true);
         $this->load->view('commun/V_template', array('contenu' => $page));
 	}
+
+	public function validation()
+	{
+		$civilite = $this->input->post('civilite');
+       	$Nom = $this->input->post('Nom');
+       	$NomNaiss = $this->input->post('NomNaiss');
+       	$Prenom = $this->input->post('Prenom');
+       	$DateNaiss = $this->input->post('DateNaiss');
+       	$LieuNaiss = $this->input->post('LieuNaiss');
+       	$DepNaiss = $this->input->post('DepNaiss');
+       	$Adresse = $this->input->post('Adresse');
+       	$Ville = $this->input->post('Ville');
+       	$CodeP = $this->input->post('CodeP');
+       	$Pays = $this->input->post('Pays');
+       	$Tel = $this->input->post('Tel');
+       	$SecuSoc = $this->input->post('SecuSoc');
+       	$MailA = $this->input->post('MailA');
+       	$MailP = $this->input->post('MailP');
+       	$intervenants = $this->input->post('intervenants');
+       	$Administratif = $this->input->post('Administratif');
+       	$Statut = $this->input->post('Statut');
+       	$Categorie = $this->input->post('Categorie');
+       	$EtaAf = $this->input->post('EtaAf');
+       	$VilleAf = $this->input->post('VilleAf');
+       	$CodeAf = $this->input->post('CodeAf');
+
+        $GLOBALS["test"]= array("civilite"=>$civilite,"Nom"=>$Nom,"NomNaiss"=>$NomNaiss,"Prenom"=>$Prenom,"DateNaiss"=>$DateNaiss,"LieuNaiss"=>$LieuNaiss,"DepNaiss"=>$DepNaiss,"Adresse"=>$Adresse,"Ville"=>$Ville,"CodeP"=>$CodeP,"Pays"=>$Pays,"Tel"=>$Tel,"SecuSoc"=>$SecuSoc,"MailA"=>$MailA,"MailP"=>$MailP,"intervenants"=>$intervenants,"Administratif"=>$Administratif,"Statut"=>$Statut,"Categorie"=>$Categorie,"EtaAf"=>$EtaAf,"VilleAf"=>$VilleAf,"CodeAf"=>$CodeAf );
+
+        redirect('C_lettre','refresh');
+	}
 }
