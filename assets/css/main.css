@@ -86,12 +86,12 @@ body{
 	margin-top: 38px;
 }
 
-.labelMarginBottom2{
-	margin-top: 20px;
+.labelMarginLeft{
+	margin-left: 80px;
 }
 
-.labelMarginLeft{
-	margin-left: 46px;
+.labelMarginLeft2{
+	margin-left: 36px;
 }
 
 .inputcolor {

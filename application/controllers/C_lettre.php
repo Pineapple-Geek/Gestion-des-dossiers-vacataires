@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class C_contrat extends CI_Controller {
+class C_lettre extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -20,8 +20,8 @@ class C_contrat extends CI_Controller {
 	 */
 	public function index()
 	{
-		$data['title'] = "Contrat - Fiche de renseignement personnel";
-		$page = $this->load->view('V_contrat', $data, true);
+		$data['title'] = "Lettre d'engagement - Fiche de renseignement personnel";
+		$page = $this->load->view('V_lettre', $data, true);
         $this->load->view('commun/V_template', array('contenu' => $page));
 	}
 }

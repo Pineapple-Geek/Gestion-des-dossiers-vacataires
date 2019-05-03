@@ -54,25 +54,24 @@
                     <div class="form-row">
 
                     <div class="col"> 
-                        <label class="col-sm-5 col-form-label text-right labelMarginLeft">Administratif/autre personnel : </label>
+                        <label class="col-sm-5 col-form-label text-right labelMarginLeft">Administratif : </label>
                         <input type="text" name=""><br>
                     </div>
 
                     <div class="col">
-                        <label class="col-sm-3 col-form-label text-right labelMarginBottom2">Statut : </label>
+                        <label class="col-sm-3 col-form-label text-right">Statut : </label>
                         <select class="selectFontSize" required>
                             <option> - </option>
                             <option>Poste gagé titulaire</option>
                             <option>Vacataire non titulaire mis à disposition</option>
-                            <option>Contractuel en CDI</option>
-                            <option>Contractuel en CDD</option>
+                            <option>Contractuel</option>
                             <option>Sous traitant ou auto-entrepreneur</option>
                             <option>Vacataire non titulaire</option>
                             <option>Vacataire titulaire en HS</option>
                         </select><br>
                     </div>
                     <div class="col">
-                        <label class="col-sm-4 col-form-label text-right labelMarginBottom2">Catégorie : </label>
+                        <label class="col-sm-4 col-form-label text-right">Catégorie : </label>
                         <select class="selectFontSize" required>
                             <option> - </option>
                             <option style="color: grey;">Enseignant</option>
@@ -92,9 +91,9 @@
                             <option></option>
                             <option style="color: grey;">Contractuel</option>
                             <option style="color: grey;">----------------------------------</option>
-                            <option>Contractuels CDD ou CDI 1ère cat.</option>
-                            <option>Contractuels CDD ou CDI 2ème cat.</option>
-                            <option>Contractuels CDD ou CDI 3ème cat.</option>
+                            <option>Contractuels 1ère cat.</option>
+                            <option>Contractuels 2ème cat.</option>
+                            <option>Contractuels 3ème cat.</option>
                             <option></option>
                             <option style="color: grey;">Autres</option>
                             <option style="color: grey;">----------------------------------</option>
@@ -106,7 +105,7 @@
                 <div class="form-row">
                     <div class="col">
                         <p class="lieuAffect"><u> Lieu d'affectation principal :</u></p>
-                        <label class="col-sm-6 col-form-label text-right">Etablissement:</label> <input class="input" type="text" name="fullname">
+                        <label class="col-sm-6 col-form-label text-right labelMarginLeft2">Etablissement:</label> <input class="input" type="text" name="fullname">
                     </div>
                     <div class="col">
                         <label class="col-sm-3 col-form-label text-right labelMarginBottom">Ville:</label> <input class="input" type="text" name="fullname">

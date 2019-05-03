@@ -20,7 +20,7 @@ class C_identite extends CI_Controller {
 	 */
 	public function index()
 	{
-		$data['title'] = "Identité - Fiche de renseignement personnel";
+		$data['title'] = "Identité / Contrat et statut - Fiche de renseignement personnel";
 		$page = $this->load->view('V_identite', $data, true);
         $this->load->view('commun/V_template', array('contenu' => $page));
 	}
