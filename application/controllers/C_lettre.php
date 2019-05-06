@@ -24,4 +24,24 @@ class C_lettre extends CI_Controller {
 		$page = $this->load->view('V_lettre', $data, true);
         $this->load->view('commun/V_template', array('contenu' => $page));
 	}
+    public function retour()
+    {
+        redirect('C_identite','refresh');
+    }
+    public function validation()
+    {
+        $IntAction = $this->input->post('IntAction');
+        $CentreProduct = $this->input->post('CentreProduct');
+        $DateFin = $this->input->post('DateFin');
+        $Etablissement = $this->input->post('Etablissement');
+        $HeureEnseignement = $this->input->post('HeureEnseignement');
+        $HeurePeripherique = $this->input->post('HeurePeripherique');
+        $Niveau = $this->input->post('Niveau');
+        $DateFin = $this->input->post('DateFin');
+        $Ville = $this->input->post('Ville');
+        $TauxHoraire = $this->input->post('TauxHoraire');
+
+        $GLOBALS["lettre"]= array("Intitule_Action"=>$IntAction,"Centre"=>$CentreProduct,"Date_Fin"=>$DateFin,"Lieu"=>$Etablissement,"Heure_Enseignement"=>$HeureEnseignement,"Heure_Peripherique"=>$HeurePeripherique,"Niveau"=>$Niveau,"Date_Fin"=>$DateFin,"Ville"=>$Ville,"Taux"=>$TauxHoraire );
+        redirect('C_piece','refresh');
+    }
 }
