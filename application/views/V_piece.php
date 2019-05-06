@@ -9,7 +9,7 @@
                     <p class="card-text"><img class="cardImageValid" src="<?php echo base_url("/assets/images/"); ?>valider.png"></p>
                     <p class="card-text"><img class="cardImageValid" src="<?php echo base_url("/assets/images/"); ?>valider.png"></p>
                     <p class="card-text"><img class="cardImageValid" src="<?php echo base_url("/assets/images/"); ?>valider.png"></p>
-
+                <?php ?>
                 </div>
 
                 <div class="d-inline-block col-sm-4">
