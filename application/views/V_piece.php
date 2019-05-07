@@ -85,3 +85,25 @@
         </div><br><br>
     </div>
 </form>
+
+<?php   
+        if(isset($_SESSION["identite"]) && isset($_SESSION["lettre"]))
+        {
+
+        } 
+        else 
+        {
+            if (isset($_SESSION["identite"]))
+            {
+                echo '<script type="text/javascript">alert("Le formulaire \"Lettre d\'engagement\" et statut doit étre remplis!");</script>'; 
+            }
+            else if (isset($_SESSION["lettre"]))
+            {
+                echo '<script type="text/javascript">alert("Le formulaire Identité / Contrat et statut doit étre remplis!");</script>'; 
+            }
+            else
+            {
+                echo '<script type="text/javascript">alert("Le formulaire \"Identité / Contrat et statut\" et \"Lettre d\'engagement\" doit étre remplis!");</script>'; 
+            }
+        }
+?>

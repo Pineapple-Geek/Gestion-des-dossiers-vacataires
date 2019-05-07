@@ -50,7 +50,7 @@ class C_identite extends CI_Controller {
        	$VilleAf = $this->input->post('VilleAf');
        	$CodeAf = $this->input->post('CodeAf');
 
-        $GLOBALS["test"]= array("civilite"=>$civilite,"Nom"=>$Nom,"NomNaiss"=>$NomNaiss,"Prenom"=>$Prenom,"DateNaiss"=>$DateNaiss,"LieuNaiss"=>$LieuNaiss,"DepNaiss"=>$DepNaiss,"Adresse"=>$Adresse,"Ville"=>$Ville,"CodeP"=>$CodeP,"Pays"=>$Pays,"Tel"=>$Tel,"SecuSoc"=>$SecuSoc,"MailA"=>$MailA,"MailP"=>$MailP,"intervenants"=>$intervenants,"Administratif"=>$Administratif,"Statut"=>$Statut,"Categorie"=>$Categorie,"EtaAf"=>$EtaAf,"VilleAf"=>$VilleAf,"CodeAf"=>$CodeAf );
+        $_SESSION["identite"]= array("civilite"=>$civilite,"Nom"=>$Nom,"NomNaiss"=>$NomNaiss,"Prenom"=>$Prenom,"DateNaiss"=>$DateNaiss,"LieuNaiss"=>$LieuNaiss,"DepNaiss"=>$DepNaiss,"Adresse"=>$Adresse,"Ville"=>$Ville,"CodeP"=>$CodeP,"Pays"=>$Pays,"Tel"=>$Tel,"SecuSoc"=>$SecuSoc,"MailA"=>$MailA,"MailP"=>$MailP,"intervenants"=>$intervenants,"Administratif"=>$Administratif,"Statut"=>$Statut,"Categorie"=>$Categorie,"EtaAf"=>$EtaAf,"VilleAf"=>$VilleAf,"CodeAf"=>$CodeAf );
 
         redirect('C_lettre','refresh');
 	}

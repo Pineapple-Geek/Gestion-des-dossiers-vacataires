@@ -37,7 +37,7 @@ class C_lettre extends CI_Controller {
         $Ville = $this->input->post('Ville');
         $TauxHoraire = $this->input->post('TauxHoraire');
 
-        $GLOBALS["lettre"]= array("Intitule_Action"=>$IntAction,"Centre"=>$CentreProduct,"Date_Fin"=>$DateFin,"Lieu"=>$Etablissement,"Heure_Enseignement"=>$HeureEnseignement,"Heure_Peripherique"=>$HeurePeripherique,"Niveau"=>$Niveau,"Date_Fin"=>$DateFin,"Ville"=>$Ville,"Taux"=>$TauxHoraire );
+        $_SESSION["lettre"]= array("Intitule_Action"=>$IntAction,"Centre"=>$CentreProduct,"Date_Fin"=>$DateFin,"Lieu"=>$Etablissement,"Heure_Enseignement"=>$HeureEnseignement,"Heure_Peripherique"=>$HeurePeripherique,"Niveau"=>$Niveau,"Date_Fin"=>$DateFin,"Ville"=>$Ville,"Taux"=>$TauxHoraire );
         redirect('C_piece','refresh');
     }
 }
