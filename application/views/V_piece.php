@@ -78,7 +78,7 @@
 
     <div class="row">
         <div class="col-sm-1">
-            <input type="submit" value="Précédent" class="inputcolor">
+            <button type="button" name="Précédent" class="inputcolor" onclick="location.href='C_lettre'">Précédent</button>
         </div>
         <div class="col-sm-1 offset-sm-10">
             <input type="submit" value="Suivant" class="inputcolor">

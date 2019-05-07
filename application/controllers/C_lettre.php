@@ -24,10 +24,6 @@ class C_lettre extends CI_Controller {
 		$page = $this->load->view('V_lettre', $data, true);
         $this->load->view('commun/V_template', array('contenu' => $page));
 	}
-    public function retour()
-    {
-        redirect('C_identite','refresh');
-    }
     public function validation()
     {
         $IntAction = $this->input->post('IntAction');

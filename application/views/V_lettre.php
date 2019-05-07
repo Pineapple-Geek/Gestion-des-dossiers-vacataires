@@ -1,4 +1,4 @@
-<form method="post"  action="<?php if (isset($_POST['Précédent'])) {echo base_url('index.php/C_lettre/retour');} if (isset($_POST['Suivant'])){echo base_url('index.php/C_lettre/validation');}?>">
+<form method="post"  action="<?php echo base_url('index.php/C_lettre/validation'); ?>">
     <div class="row">
         <div class="card cardMargin">
             <div class="card-header cardcolor"><span class="cardTitle">Lettre d'engagement</span></div>
@@ -39,7 +39,7 @@
 
     <div class="row">
         <div class="col-sm-1">
-            <input type="submit" name="Précédent" value="Précédent" class="inputcolor">
+            <button type="button" name="Précédent" class="inputcolor" onclick="location.href='C_identite'">Précédent</button>
         </div>
         <div class="col-sm-1 offset-sm-10">
             <input type="submit" name="Suivant" value="Suivant" class="inputcolor" >
