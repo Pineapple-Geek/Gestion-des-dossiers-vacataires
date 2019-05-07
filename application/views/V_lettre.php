@@ -40,27 +40,27 @@
                     <div class="col-sm-7">
                         <h6 class="card-title cardBodyTitle"><u>Action 1 - SE1 :</u></h6>
                         <label class="col-sm-6 col-form-label text-right">Intitulé de l'action : </label>
-                        <input type="text" name="IntAction"><br>
+                        <input type="text" name="IntAction1"><br>
                         <label class="col-sm-6 col-form-label text-right">Centre de production : </label>
-                        <input type="text" name="CentreProduct"><br>
+                        <input type="text" name="CentreProduct1"><br>
                         <label class="col-sm-6 col-form-label text-right">Date de début : </label>
-                        <input type="date" name="DateFin"><br>
+                        <input type="date" name="DateDebut1"><br>
                         <label class="col-sm-6 col-form-label text-right">Etablissement : </label>
-                        <input type="text" name="Etablissement"><br>
+                        <input type="text" name="Etablissement1"><br>
                         <label class="col-sm-6 col-form-label text-right">Nbre heures Enseignement : </label>
-                        <input type="text" name="HeureEnseignement"><br>
+                        <input type="text" name="HeureEnseignement1"><br>
                         <label class="col-sm-6 col-form-label text-right">Nbre heures Périphérique : </label>
-                        <input type="text" name="HeurePeripherique" ><br>
+                        <input type="text" name="HeurePeripherique1" ><br>
                     </div>
                     <div class="col-sm-5">
                         <label class="col-sm-6 col-form-label text-right niveauMargin">Niveau : </label>
-                        <input type="text" name="Niveau">
+                        <input type="text" name="Niveau1">
                         <label class="col-sm-6 col-form-label text-right datefinMargin">Date de fin : </label>
-                        <input type="date" name="DateFin"><br>
+                        <input type="date" name="DateFin1"><br>
                         <label class="col-sm-6 col-form-label text-right">Ville : </label>
-                        <input type="text" name="Ville"><br>
+                        <input type="text" name="Ville1"><br>
                         <label class="col-sm-6 col-form-label text-right">Taux horaire : </label>
-                        <input type="text" name="TauxHoraire"><br>
+                        <input type="text" name="TauxHoraire1"><br>
 
                     </div>
 
