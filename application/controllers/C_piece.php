@@ -40,9 +40,10 @@ class C_piece extends CI_Controller {
         if( $this->input->post('Suivant') )
         {
             // setting the config array
-            $config['upload_path'] 		= './uploads';
-			$config['allowed_types'] 	= 'gif|jpg|jpeg|png|pdf';
+            $config['upload_path'] 		= './uploads/' . $_SESSION["identite"]["Prenom"] . "_" . $_SESSION["identite"]["Nom"];
+			$config['allowed_types'] 	= 'jpg|jpeg|png|pdf';
             $config['max_size']         = 0;
+            $config['errorCheck']       = false;
 
             $this->load->library('upload', $config);
 
@@ -53,21 +54,27 @@ class C_piece extends CI_Controller {
             $this->lets_upload( 'userfile3' );
             $this->lets_upload( 'userfile4' );
         }
-        $page = $this->load->view('V_piece', $this->data, true);
-        $this->load->view('commun/V_template', array('contenu' => $page));
+        if ($config['errorCheck'] == true)
+        {
+        	$page = $this->load->view('V_fail', $this->data, true);
+        }
+        else
+        {
+        	$page = $this->load->view('V_success', $this->data, true);
+        }
+        session_destroy();
+        $this->load->view('commun/V_template_nobutton', array('contenu' => $page));
     }
 
     public function lets_upload( $field_name )    // this function does the uploads
     {
         if ( ! $this->upload->do_upload( $field_name ))    // ** do_upload() is a member function of upload class, and it is responsible for the uploading files with the given configuration in the config array
         {
-            $this->data['notification'] .= $this->upload->display_errors();    // now if there's is some error in uploading files, then errors are stored in the member variable 'data'
+            $config['errorCheck'] = true;    // now if there's is some error in uploading files, then errors are stored in the member variable 'data'
         }
         else
         {
             $upload_data = $this->upload->data();    // if succesful, then infomation about the uploaded file is stored in the $upload_data variable
-
-            $this->data['notification'] .= $upload_data['file_name']." is successfully uploaded.";    // name of uploaded file is stored in the member variable 'data'
         }
     }
 }

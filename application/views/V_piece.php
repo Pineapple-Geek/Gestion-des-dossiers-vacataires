@@ -93,7 +93,7 @@
 ?>
 
 <?php   
-        if(isset($_SESSION["identite"]) && isset($_SESSION["lettre"]))
+        if(isset($_SESSION["identite"]) && isset($_SESSION["lettre1"]))
         {
 
         } 
@@ -103,7 +103,7 @@
             {
                 echo '<script type="text/javascript">alert("Le formulaire \"Lettre d\'engagement\" et statut doit étre remplis!");</script>'; 
             }
-            else if (isset($_SESSION["lettre"]))
+            else if (isset($_SESSION["lettre1"]))
             {
                 echo '<script type="text/javascript">alert("Le formulaire Identité / Contrat et statut doit étre remplis!");</script>'; 
             }
