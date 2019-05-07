@@ -19,6 +19,11 @@ class C_piece extends CI_Controller {
 	 * @see https://codeigniter.com/user_guide/general/urls.html
      * 	 */
 
+	function __construct()
+	{
+		parent::__construct();
+		$this->load->helper(array('form', 'url'));
+	}
 
 	public function index()
 	{
@@ -27,4 +32,42 @@ class C_piece extends CI_Controller {
 		$page = $this->load->view('V_piece', $data, true);
         $this->load->view('commun/V_template', array('contenu' => $page));
 	}
+
+	public function upload_file()
+    {
+        $this->data['title'] = "Pièces jointes - Fiche de renseignement personnel";
+        $this->data['notification'] = '';
+        if( $this->input->post('Suivant') )
+        {
+            // setting the config array
+            $config['upload_path'] 		= './uploads';
+			$config['allowed_types'] 	= 'gif|jpg|jpeg|png|pdf';
+            $config['max_size']         = 0;
+
+            $this->load->library('upload', $config);
+
+            // uploading the files
+
+            $this->lets_upload( 'userfile1' );
+            $this->lets_upload( 'userfile2' );
+            $this->lets_upload( 'userfile3' );
+            $this->lets_upload( 'userfile4' );
+        }
+        $page = $this->load->view('V_piece', $this->data, true);
+        $this->load->view('commun/V_template', array('contenu' => $page));
+    }
+
+    public function lets_upload( $field_name )    // this function does the uploads
+    {
+        if ( ! $this->upload->do_upload( $field_name ))    // ** do_upload() is a member function of upload class, and it is responsible for the uploading files with the given configuration in the config array
+        {
+            $this->data['notification'] .= $this->upload->display_errors();    // now if there's is some error in uploading files, then errors are stored in the member variable 'data'
+        }
+        else
+        {
+            $upload_data = $this->upload->data();    // if succesful, then infomation about the uploaded file is stored in the $upload_data variable
+
+            $this->data['notification'] .= $upload_data['file_name']." is successfully uploaded.";    // name of uploaded file is stored in the member variable 'data'
+        }
+    }
 }

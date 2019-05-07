@@ -1,4 +1,4 @@
-<form>
+<form action="http://localhost/vacataires/index.php/C_piece/upload_file" enctype="multipart/form-data" method="post" accept-charset="utf-8">
     <div class="row">
         <div class="card">
             <div class="card-header cardcolor"><span class="cardTitle">Document à fournir</span></div>
@@ -9,7 +9,6 @@
                     <p class="card-text"><img class="cardImageValid" src="<?php echo base_url("/assets/images/"); ?>valider.png"></p>
                     <p class="card-text"><img class="cardImageValid" src="<?php echo base_url("/assets/images/"); ?>valider.png"></p>
                     <p class="card-text"><img class="cardImageValid" src="<?php echo base_url("/assets/images/"); ?>valider.png"></p>
-                <?php ?>
                 </div>
 
                 <div class="d-inline-block col-sm-4">
@@ -21,10 +20,10 @@
                 </div>
 
                 <div class="d-inline-block col-sm-2 text-left">
-                    <p class="card-text cardTextMargin2"><input class="ajouter" type="file" required></p>
-                    <p class="card-text cardTextMargin2"><input class="ajouter" type="file" required></p>
-                    <p class="card-text cardTextMargin2"><input class="ajouter" type="file" required></p>
-                    <p class="card-text cardTextMargin2"><input class="ajouter" type="file" required></p>
+                    <p class="card-text cardTextMargin2"><input class="ajouter" type="file" name="userfile1" required></p>
+                    <p class="card-text cardTextMargin2"><input class="ajouter" type="file" name="userfile2" required></p>
+                    <p class="card-text cardTextMargin2"><input class="ajouter" type="file" name="userfile3" required></p>
+                    <p class="card-text cardTextMargin2"><input class="ajouter" type="file" name="userfile4" required></p>
 
                 </div>
 
@@ -81,10 +80,17 @@
             <button type="button" name="Précédent" class="inputcolor" onclick="location.href='C_lettre'">Précédent</button>
         </div>
         <div class="col-sm-1 offset-sm-10">
-            <input type="submit" value="Suivant" class="inputcolor">
+            <input type="submit" value="Suivant" name="Suivant" class="inputcolor">
         </div><br><br>
     </div>
 </form>
+
+<?php
+        if( !empty( $notification ) )
+        {
+            echo '<script type="text/javascript">alert("Notifications : '.$notification.'");</script>';
+        }
+?>
 
 <?php   
         if(isset($_SESSION["identite"]) && isset($_SESSION["lettre"]))
