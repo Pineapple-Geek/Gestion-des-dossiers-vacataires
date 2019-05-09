@@ -22,12 +22,12 @@
             </tr>
             </thead>
             <tbody>
-                <?php foreach ($identite as $row ){;?>
+                <?php foreach ($liste as $row ){;?>
                     <tr>
                         <td><?php echo $row['id_Identite'];?></td>
                         <td><?php echo $row['Nom'];?></td>
                         <td><?php echo $row['Prenom'];?></td>
-                        <td></td>
+                        <td><?php echo $row['Type'];?></td>
                     </tr>
 
                 <?php }?>

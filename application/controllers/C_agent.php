@@ -15,10 +15,9 @@ class C_agent extends CI_Controller
 
     public function index()
     {
-        $array_resultat = $this->M_agent->select_identite();
-        $data['identite'] = $array_resultat;
-        $array_resultat = $this->M_agent->select_verification();
-        $data['verification'] = $array_resultat;
+        $array_resultat = $this->M_agent->select_all();
+        $data['liste'] = $array_resultat;
+
 
         $data['title'] = "Menu agent";
         $page = $this->load->view('V_agent', $data, true);
