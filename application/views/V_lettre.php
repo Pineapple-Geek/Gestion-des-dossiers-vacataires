@@ -14,13 +14,13 @@
                     '<label class="col-sm-6 col-form-label text-right">Centre de production : </label><input type="text" name="CentreProduct'+i+'" required><br>\n' +
                     '<label class="col-sm-6 col-form-label text-right">Date de début : </label><input type="date" name="DateFin'+i+'" required><br>\n' +
                     '<label class="col-sm-6 col-form-label text-right">Etablissement : </label><input type="text" name="Etablissement'+i+'" required><br>\n' +
-                    '<label class="col-sm-6 col-form-label text-right">Nbre heures Enseignement : </label><input type="text" name="HeureEnseignement'+i+'" required><br>\n' +
-                    '<label class="col-sm-6 col-form-label text-right">Nbre heures Périphérique : </label><input type="text" name="HeurePeripherique'+i+'" required><br>\n' +
+                    '<label class="col-sm-6 col-form-label text-right">Nbre heures Enseignement : </label><input type="number" name="HeureEnseignement'+i+'" required><br>\n' +
+                    '<label class="col-sm-6 col-form-label text-right">Nbre heures Périphérique : </label><input type="number" name="HeurePeripherique'+i+'" required><br>\n' +
                     '</div><div class="col-sm-5"><label class="col-sm-6 col-form-label text-right niveauMargin">Niveau : </label>\n' +
-                    '<input type="text" name="Niveau'+i+'" required><label class="col-sm-6 col-form-label text-right datefinMargin">Date de fin : </label>\n' +
+                    '<input type="number" name="Niveau'+i+'" required><label class="col-sm-6 col-form-label text-right datefinMargin">Date de fin : </label>\n' +
                     '<input type="date" name="DateFin'+i+'" required><br><label class="col-sm-6 col-form-label text-right">Ville : </label>\n' +
                     '<input type="text" name="Ville'+i+'" required><br><label class="col-sm-6 col-form-label text-right">Taux horaire : </label>\n' +
-                    '<input type="text" name="TauxHoraire'+i+'" required><br><br></div>');
+                    '<input type="number" name="TauxHoraire'+i+'" required><br><br></div>');
             }
 
         });
@@ -48,19 +48,19 @@
                         <label class="col-sm-6 col-form-label text-right">Etablissement : </label>
                         <input type="text" name="Etablissement1" required><br>
                         <label class="col-sm-6 col-form-label text-right">Nbre heures Enseignement : </label>
-                        <input type="text" name="HeureEnseignement1" required><br>
+                        <input type="number" name="HeureEnseignement1" required><br>
                         <label class="col-sm-6 col-form-label text-right">Nbre heures Périphérique : </label>
-                        <input type="text" name="HeurePeripherique1" required><br>
+                        <input type="number" name="HeurePeripherique1" required><br>
                     </div>
                     <div class="col-sm-5">
                         <label class="col-sm-6 col-form-label text-right niveauMargin">Niveau : </label>
-                        <input type="text" name="Niveau1" required>
+                        <input type="number" name="Niveau1" required>
                         <label class="col-sm-6 col-form-label text-right datefinMargin">Date de fin : </label>
                         <input type="date" name="DateFin1" required><br>
                         <label class="col-sm-6 col-form-label text-right">Ville : </label>
                         <input type="text" name="Ville1" required><br>
                         <label class="col-sm-6 col-form-label text-right">Taux horaire : </label>
-                        <input type="text" name="TauxHoraire1" required><br>
+                        <input type="number" name="TauxHoraire1" required><br>
 
                     </div>
 
