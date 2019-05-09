@@ -22,7 +22,15 @@
             </tr>
             </thead>
             <tbody>
+                <?php foreach ($identite as $row ){;?>
+                    <tr>
+                        <td><?php echo $row['id_Identite'];?></td>
+                        <td><?php echo $row['Nom'];?></td>
+                        <td><?php echo $row['Prenom'];?></td>
+                        <td></td>
+                    </tr>
 
+                <?php }?>
             </tbody>
         </table>
     </div>

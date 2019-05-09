@@ -9,12 +9,16 @@ class C_agent extends CI_Controller
     {
         parent::__construct();
 
-        $this->load->model('M_administrateur');
+        $this->load->model('M_agent');
     }
 
 
     public function index()
     {
+        $array_resultat = $this->M_agent->select_identite();
+        $data['identite'] = $array_resultat;
+        $array_resultat = $this->M_agent->select_verification();
+        $data['verification'] = $array_resultat;
 
         $data['title'] = "Menu agent";
         $page = $this->load->view('V_agent', $data, true);
