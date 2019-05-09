@@ -14,4 +14,12 @@ class M_formulaire extends CI_Model {
         return true;
     }
 
+    public function get_id_by_name($prmN) {
+        $query = $this->db->select('id_Identite')
+                ->from('identite')
+                ->where('Nom',$prmN)
+                ->get();
+        return $query->result_array();
+    }
+
 }
