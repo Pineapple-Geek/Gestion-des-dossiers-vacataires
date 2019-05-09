@@ -23,4 +23,13 @@ class C_agent extends CI_Controller
         $page = $this->load->view('V_agent', $data, true);
         $this->load->view('commun/V_template_user', array('contenu' => $page));
     }
+    public function recherche($primd)
+    {
+        $array_resultat = $this->M_agent->select_dossier_by_nom($primd);
+        $data['liste'] = $array_resultat;
+
+        $data['title'] = "Menu agent";
+        $page = $this->load->view('V_agent', $data, true);
+        $this->load->view('commun/V_template_user', array('contenu' => $page));
+    }
 }

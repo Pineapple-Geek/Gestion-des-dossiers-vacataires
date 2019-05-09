@@ -18,6 +18,14 @@ class M_agent extends CI_Model
             ->get();
         return $query->result_array(); //conversion en tableau PH
     }
-
+    public function select_dossier_by_nom($primd)
+    {
+        $query = $this->db->select('*')
+            ->from('identite,verification')
+            ->where('identite.Nom',$primd)
+            ->where ('verification.Identite_id_Identite = identite.id_Identite')
+            ->get();
+        return $query->result_array(); //conversion en tableau PH
+    }
 
 }
