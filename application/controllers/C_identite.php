@@ -42,6 +42,7 @@ class C_identite extends CI_Controller {
        	$SecuSoc = $this->input->post('SecuSoc');
        	$MailA = $this->input->post('MailA');
        	$MailP = $this->input->post('MailP');
+
        	$intervenants = $this->input->post('intervenants');
        	$Administratif = $this->input->post('Administratif');
        	$Statut = $this->input->post('Statut');
@@ -50,7 +51,9 @@ class C_identite extends CI_Controller {
        	$VilleAf = $this->input->post('VilleAf');
        	$CodeAf = $this->input->post('CodeAf');
 
-        $_SESSION["identite"]= array("civilite"=>$civilite,"Nom"=>$Nom,"NomNaiss"=>$NomNaiss,"Prenom"=>$Prenom,"DateNaiss"=>$DateNaiss,"LieuNaiss"=>$LieuNaiss,"DepNaiss"=>$DepNaiss,"Adresse"=>$Adresse,"Ville"=>$Ville,"CodeP"=>$CodeP,"Pays"=>$Pays,"Tel"=>$Tel,"SecuSoc"=>$SecuSoc,"MailA"=>$MailA,"MailP"=>$MailP,"intervenants"=>$intervenants,"Administratif"=>$Administratif,"Statut"=>$Statut,"Categorie"=>$Categorie,"EtaAf"=>$EtaAf,"VilleAf"=>$VilleAf,"CodeAf"=>$CodeAf );
+        $_SESSION["identite"]= array("Civilite"=>$civilite,"Nom"=>$Nom,"Nom_Naissance"=>$NomNaiss,"Prenom"=>$Prenom,"Date_Naissance"=>$DateNaiss,"Lieu_Naissance"=>$LieuNaiss,"Departement"=>$DepNaiss,"Adresse"=>$Adresse,"Ville"=>$Ville,"Code_Postal"=>$CodeP,"Pays"=>$Pays,"N_Tel"=>$Tel,"N_Securite_sociale"=>$SecuSoc,"Adresse_Mail_Academique"=>$MailA,"Adresse_Mail_Perso"=>$MailP);
+        
+        $_SESSION["contrat"]= array("Intervenants"=>$intervenants,"Administratif"=>$Administratif,"Status"=>$Statut,"Categorie"=>$Categorie,"Etablissement"=>$EtaAf,"Ville_E"=>$VilleAf,"Code_Postal_E"=>$CodeAf);
 
         redirect('C_lettre','refresh');
 	}

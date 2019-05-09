@@ -34,6 +34,9 @@ class C_piece extends CI_Controller {
     }
 
     public function upload_file() {
+        $Soussigne = $this->input->post('Soussigne');
+        $Date = $this->input->post('Date');
+
         $this->data['title'] = "Pièces jointes - Fiche de renseignement personnel";
         $this->data['notification'] = '';
         if ($this->input->post('Suivant')) {

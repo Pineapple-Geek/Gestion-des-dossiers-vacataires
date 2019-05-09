@@ -10,23 +10,23 @@
                         <label for="nom" class="col-sm-6 col-form-label text-right">Nom:</label> <input class="input" type="text" name="Nom" id="Nom" required>
                         <label for ="nomNaiss" class="col-sm-6 col-form-label text-right">Nom de naissance:</label> <input class="input" type="text" name="NomNaiss" id="nomNaiss" required>
                         <label for="prenom" class="col-sm-6 col-form-label text-right">Prénom:</label> <input class="input" type="text" name="Prenom" id="prenom" required>
-                        <label class="col-sm-6 col-form-label text-right">Date de Naissance:</label> <input class="input" class="date" name="DateNaiss" type="date">
-                        <label class="col-sm-6 col-form-label text-right">Lieu de Naissance:</label> <input class="input" type="text" name="LieuNaiss">
-                        <label class="col-sm-6 col-form-label text-right">Département de Naissance:</label> <input class="input" type="text" name="DepNaiss">
+                        <label class="col-sm-6 col-form-label text-right">Date de Naissance:</label> <input class="input" class="date" name="DateNaiss" type="date" required>
+                        <label class="col-sm-6 col-form-label text-right">Lieu de Naissance:</label> <input class="input" type="text" name="LieuNaiss" required>
+                        <label class="col-sm-6 col-form-label text-right">Département de Naissance:</label> <input class="input" type="text" name="DepNaiss" required>
                     </div>
 
                     <div class="col">
-                        <label class="col-sm-4 col-form-label text-right labelMarginTop">Adresse:</label> <input class="input" type="text" name="Adresse">
-                        <label class="col-sm-4 col-form-label text-right">Ville:</label> <input class="input" type="text" name="Ville">
-                        <label class="col-sm-4 col-form-label text-right">Code Postal:</label> <input class="input" type="number" name="CodeP">
-                        <label class="col-sm-4 col-form-label text-right">Pays:</label> <input class="input" type="text" name="Pays">
-                        <label class="col-sm-4 col-form-label text-right">N°Tel:</label> <input class="input" type="number" name="Tel">
+                        <label class="col-sm-4 col-form-label text-right labelMarginTop">Adresse:</label> <input class="input" type="text" name="Adresse" required>
+                        <label class="col-sm-4 col-form-label text-right">Ville:</label> <input class="input" type="text" name="Ville" required>
+                        <label class="col-sm-4 col-form-label text-right">Code Postal:</label> <input class="input" type="number" name="CodeP" required>
+                        <label class="col-sm-4 col-form-label text-right">Pays:</label> <input class="input" type="text" name="Pays" required>
+                        <label class="col-sm-4 col-form-label text-right">N°Tel:</label> <input class="input" type="number" name="Tel" required>
                     </div>
 
                     <div class="col">
-                        <label class="col-sm-6 col-form-label text-right labelMarginTop">N° Sécurité Sociale:</label> <input class="input" type="text" name="SecuSoc">
-                        <label class="col-sm-6 col-form-label text-right">Adresse mail académique:</label> <input class="input" type="text" name="MailA">
-                        <label class="col-sm-6 col-form-label text-right">Adresse mail perso:</label> <input class="input" type="text" name="MailP">
+                        <label class="col-sm-6 col-form-label text-right labelMarginTop">N° Sécurité Sociale:</label> <input class="input" type="text" name="SecuSoc" required>
+                        <label class="col-sm-6 col-form-label text-right">Adresse mail académique:</label> <input class="input" type="text" name="MailA" placeholder="(Facultatif)">
+                        <label class="col-sm-6 col-form-label text-right">Adresse mail perso:</label> <input class="input" type="text" name="MailP" required>
                     </div>
                 </div>
         </div>
@@ -42,14 +42,15 @@
                         <h6 class="card-title cardBodyTitle">Fonction occupée : </h6>
 
                         <label class="col-sm-3 col-form-label text-right">Intervenants : </label>
-                        <input type="radio" name="intervenants" value="Formateur" required><label class="labelRadioPadding">Formateur</label>
-                        <input type="radio" name="intervenants" value="Conseiller bilan" required><label class="labelRadioPadding">Conseiller bilan</label>
-                        <input type="radio" name="intervenants" value="Accompagnateur VAE" required><label class="labelRadioPadding">Accompagnateur VAE</label>
-                        <input type="radio" name="intervenants" value="Jury" required><label class="labelRadioPadding">Jury</label>
-                        <input type="radio" name="intervenants" value="Retraités" required><label class="labelRadioPadding">Retraités</label>
-                        <input type="radio" name="intervenants" value="Demandeurs d’emploi" required><label class="labelRadioPadding">Demandeurs d’emploi</label>
+                        <input type="radio" name="intervenants" value="Formateur" onChange="change2()" required><label class="labelRadioPadding">Formateur</label>
+                        <input type="radio" name="intervenants" value="Conseiller bilan" onChange="change2()" required><label class="labelRadioPadding">Conseiller bilan</label>
+                        <input type="radio" name="intervenants" value="Accompagnateur VAE" onChange="change2()" required><label class="labelRadioPadding">Accompagnateur VAE</label>
+                        <input type="radio" name="intervenants" value="Jury" onChange="change2()" required><label class="labelRadioPadding">Jury</label>
+                        <input type="radio" name="intervenants" value="Retraités" onChange="change()" id="switchActif" required><label class="labelRadioPadding">Retraités</label>
+                        <input type="radio" name="intervenants" value="Demandeurs d’emploi" onChange="change()" id="switchActif" required><label class="labelRadioPadding">Demandeurs d’emploi</label>
                     </div>
                 </div>
+                <fieldset id="formEtat">
 
                     <div class="form-row">
 
@@ -61,7 +62,6 @@
                     <div class="col">
                         <label class="col-sm-3 col-form-label text-right">Statut : </label>
                         <select name="Statut" class="selectFontSize" required>
-                            <option> - </option>
                             <option>Poste gagé titulaire</option>
                             <option>Vacataire non titulaire mis à disposition</option>
                             <option>Contractuel</option>
@@ -73,7 +73,6 @@
                     <div class="col">
                         <label class="col-sm-4 col-form-label text-right">Catégorie : </label>
                         <select name="Categorie" class="selectFontSize" required>
-                            <option> - </option>
                             <option style="color: grey;">Enseignant</option>
                             <option style="color: grey;">----------------------------------</option>
                             <option>Agrégé</option>
@@ -114,6 +113,7 @@
                         <label class="col-sm-4 col-form-label text-right labelMarginBottom">Code Postal :</label> <input class="input" type="number" name="CodeAf">
                     </div>
                 </div>
+            </fieldset>
         </div>
     </div>
 
@@ -128,5 +128,14 @@
 </form>
 
 <script type="text/javascript">
-    window.onload = function() { alert("Veuillez vous munir des pièces justificative avant de remplir ce formulaire!"); };
+    window.onload = function() { alert("Veuillez vous munir des pièces justificative avant de remplir ce formulaire!"); }; 
+    function change(){
+            var $groupe = document.getElementById('formEtat');
+            $groupe.disabled = true;
+    }
+
+    function change2(){
+            var $groupe = document.getElementById('formEtat');
+            $groupe.disabled = false;
+    }  
 </script>

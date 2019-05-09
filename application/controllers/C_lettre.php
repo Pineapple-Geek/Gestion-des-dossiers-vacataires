@@ -38,7 +38,7 @@ class C_lettre extends CI_Controller {
         $Ville1 = $this->input->post('Ville1');
         $TauxHoraire1 = $this->input->post('TauxHoraire1');
 
-        $_SESSION["lettre1"] = array("Action" => 1, "Intitule_Action" => $IntAction1, "Niveau" => $Niveau1, "Centre" => $CentreProduct1, "Date_Debut" => $DateDebut1, "Date_Fin" => $DateFin1, "Lieu" => $Etablissement1, "Ville" => $Ville1, "Heure_Enseignement" => $HeureEnseignement1, "Heure_Peripherique" => $HeurePeripherique1, "Taux" => $TauxHoraire1);
+        $_SESSION["lettre1"] = array("Action" => 1, "Intitule_Action" => $IntAction1, "Niveau" => $Niveau1, "Centre" => $CentreProduct1, "Date_Debut" => $DateDebut1, "Date_Fin" => $DateFin1, "Etablissement" => $Etablissement1, "Ville" => $Ville1, "Heure_Enseignement" => $HeureEnseignement1, "Heure_Peripherique" => $HeurePeripherique1, "Taux" => $TauxHoraire1);
 
         //Action 2
         if ($this->input->post('IntAction2') != null) {
@@ -52,7 +52,7 @@ class C_lettre extends CI_Controller {
             $DateFin2 = $this->input->post('DateFin2');
             $Ville2 = $this->input->post('Ville2');
             $TauxHoraire2 = $this->input->post('TauxHoraire2');
-            $_SESSION["lettre2"] = array("Action" => 2, "Intitule_Action" => $IntAction2, "Niveau" => $Niveau2, "Centre" => $CentreProduct2, "Date_Debut" => $DateDebut2, "Date_Fin" => $DateFin2, "Lieu" => $Etablissement2, "Ville" => $Ville2, "Heure_Enseignement" => $HeureEnseignement2, "Heure_Peripherique" => $HeurePeripherique2, "Taux" => $TauxHoraire2);
+            $_SESSION["lettre2"] = array("Action" => 2, "Intitule_Action" => $IntAction2, "Niveau" => $Niveau2, "Centre" => $CentreProduct2, "Date_Debut" => $DateDebut2, "Date_Fin" => $DateFin2, "Etablissement" => $Etablissement2, "Ville" => $Ville2, "Heure_Enseignement" => $HeureEnseignement2, "Heure_Peripherique" => $HeurePeripherique2, "Taux" => $TauxHoraire2);
         }
 
         // Action 3
@@ -67,7 +67,7 @@ class C_lettre extends CI_Controller {
             $DateFin3 = $this->input->post('DateFin3');
             $Ville3 = $this->input->post('Ville3');
             $TauxHoraire3 = $this->input->post('TauxHoraire3');
-            $_SESSION["lettre3"] = array("Action" => 3, "Intitule_Action" => $IntAction3, "Niveau" => $Niveau3, "Centre" => $CentreProduct3, "Date_Debut" => $DateDebut3, "Date_Fin" => $DateFin3, "Lieu" => $Etablissement3, "Ville" => $Ville3, "Heure_Enseignement" => $HeureEnseignement3, "Heure_Peripherique" => $HeurePeripherique3, "Taux" => $TauxHoraire3);
+            $_SESSION["lettre3"] = array("Action" => 3, "Intitule_Action" => $IntAction3, "Niveau" => $Niveau3, "Centre" => $CentreProduct3, "Date_Debut" => $DateDebut3, "Date_Fin" => $DateFin3, "Etablissement" => $Etablissement3, "Ville" => $Ville3, "Heure_Enseignement" => $HeureEnseignement3, "Heure_Peripherique" => $HeurePeripherique3, "Taux" => $TauxHoraire3);
 
         }
         redirect('C_piece', 'refresh');

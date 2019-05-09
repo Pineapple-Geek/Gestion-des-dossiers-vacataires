@@ -60,14 +60,14 @@
                 <div class="form-group row">
                     <label class="labelSize col-form-label text-right">Je soussigné(e):</label>
                     <div class="col-sm-2">
-                        <input type="text" class="form-control" required>
+                        <input type="text" name="Soussigne" class="form-control" required>
                     </div>
                 </div>
 
                 <div class="form-group row">
                     <label class="labelSize col-form-label text-right">Date:</label>
                     <div class="col-sm-2">
-                        <input type="date" class="form-control" required>
+                        <input type="date" name="Date" class="form-control" required>
                     </div>
                 </div>
 
@@ -80,25 +80,20 @@
             <button type="button" name="Précédent" class="inputcolor" onclick="location.href='C_lettre'">Précédent</button>
         </div>
         <div class="col-sm-1 offset-sm-10">
-            <input type="submit" value="Suivant" name="Suivant" class="inputcolor">
+            <input type="submit" id="Suivant" value="Suivant" name="Suivant" class="inputcolor">
         </div><br><br>
     </div>
 </form>
 
-<?php
-        if( !empty( $notification ) )
-        {
-            echo '<script type="text/javascript">alert("Notifications : '.$notification.'");</script>';
-        }
-?>
-
 <?php   
         if(isset($_SESSION["identite"]) && isset($_SESSION["lettre1"]))
         {
-
+            ?> <script type="text/javascript"> document.getElementById('Suivant').disabled = false; </script> <?php 
         } 
         else 
         {
+            ?> <script type="text/javascript"> document.getElementById('Suivant').disabled = true; </script> <?php 
+            
             if (isset($_SESSION["identite"]))
             {
                 echo '<script type="text/javascript">alert("Le formulaire \"Lettre d\'engagement\" et statut doit étre remplis!");</script>'; 
