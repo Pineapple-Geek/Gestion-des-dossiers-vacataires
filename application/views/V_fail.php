@@ -1,6 +1,6 @@
 <div class="row">
         <div class="card">
-            <div class="card-header cardcolor"><span class="cardTitle">Document à fournir</span></div>
+            <div class="card-header cardcolor"><span class="cardTitle">Document incomplet</span></div>
             <div class="card-body cardBody">
 
             <div class="col-sm-9 offset-sm-2">
