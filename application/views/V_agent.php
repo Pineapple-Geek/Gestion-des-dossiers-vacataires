@@ -38,6 +38,7 @@
                         <td><?php echo $row['Nom'];?></td>
                         <td><?php echo $row['Prenom'];?></td>
                         <td><?php echo $row['Type'];?></td>
+                        <td><a href="<?php echo base_url('index.php/C_agent/detail/') .$row['id_Identite'];?>" class="btn btn-outline-secondary">Détail</a> </td>
                     </tr>
 
                 <?php }?>
