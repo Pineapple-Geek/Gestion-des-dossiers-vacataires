@@ -108,6 +108,76 @@
                     </div>
 
                 </div>
+                <?php if (count($lettre) == 2){?>
+
+                <div class="form-row" id="formulaire">
+
+                    <div class="col-sm-7">
+                        <h6 class="card-title cardBodyTitle"><u>Action 2 - SE2 :</u></h6>
+                        <label class="col-sm-6 col-form-label text-right">Intitulé de l'action : </label> <label class="col-sm-4 col-form-label text-left"><?php echo $lettre[1]["Intitule_Action"]; ?></label><br>
+                        <label class="col-sm-6 col-form-label text-right">Centre de production : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[1]["Centre"]; ?></label><br>
+                        <label class="col-sm-6 col-form-label text-right">Date de début : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[1]["Date_Debut"]; ?></label><br>
+                        <label class="col-sm-6 col-form-label text-right">Etablissement : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[1]["Etablissement"]; ?></label><br>
+                        <label class="col-sm-6 col-form-label text-right">Nbre heures Enseignement : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[1]["Heure_Enseignement"]; ?></label><br>
+                        <label class="col-sm-6 col-form-label text-right">Nbre heures Périphérique : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[1]["Heure_Peripherique"]; ?></label><br>
+                    </div>
+                    <div class="col-sm-5">
+                        <label class="col-sm-6 col-form-label text-right niveauMargin">Niveau : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[1]["Niveau"]; ?></label>
+                        <label class="col-sm-6 col-form-label text-right datefinMargin">Date de fin : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[1]["Date_Fin"]; ?></label><br>
+                        <label class="col-sm-6 col-form-label text-right">Ville : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[1]["Ville"]; ?></label><br>
+                        <label class="col-sm-6 col-form-label text-right">Taux horaire : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[1]["Taux"]; ?></label><br>
+
+                    </div>
+
+                </div> 
+
+                <?php } ?>
+
+                <?php if (count($lettre) == 3){?>
+
+                <div class="form-row" id="formulaire">
+
+                    <div class="col-sm-7">
+                        <h6 class="card-title cardBodyTitle"><u>Action 2 - SE2 :</u></h6>
+                        <label class="col-sm-6 col-form-label text-right">Intitulé de l'action : </label> <label class="col-sm-4 col-form-label text-left"><?php echo $lettre[1]["Intitule_Action"]; ?></label><br>
+                        <label class="col-sm-6 col-form-label text-right">Centre de production : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[1]["Centre"]; ?></label><br>
+                        <label class="col-sm-6 col-form-label text-right">Date de début : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[1]["Date_Debut"]; ?></label><br>
+                        <label class="col-sm-6 col-form-label text-right">Etablissement : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[1]["Etablissement"]; ?></label><br>
+                        <label class="col-sm-6 col-form-label text-right">Nbre heures Enseignement : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[1]["Heure_Enseignement"]; ?></label><br>
+                        <label class="col-sm-6 col-form-label text-right">Nbre heures Périphérique : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[1]["Heure_Peripherique"]; ?></label><br>
+                    </div>
+                    <div class="col-sm-5">
+                        <label class="col-sm-6 col-form-label text-right niveauMargin">Niveau : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[1]["Niveau"]; ?></label>
+                        <label class="col-sm-6 col-form-label text-right datefinMargin">Date de fin : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[1]["Date_Fin"]; ?></label><br>
+                        <label class="col-sm-6 col-form-label text-right">Ville : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[1]["Ville"]; ?></label><br>
+                        <label class="col-sm-6 col-form-label text-right">Taux horaire : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[1]["Taux"]; ?></label><br>
+
+                    </div>
+
+                </div> 
+
+                <div class="form-row" id="formulaire">
+
+                    <div class="col-sm-7">
+                        <h6 class="card-title cardBodyTitle"><u>Action 3 - SE3 :</u></h6>
+                        <label class="col-sm-6 col-form-label text-right">Intitulé de l'action : </label> <label class="col-sm-4 col-form-label text-left"><?php echo $lettre[2]["Intitule_Action"]; ?></label><br>
+                        <label class="col-sm-6 col-form-label text-right">Centre de production : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[2]["Centre"]; ?></label><br>
+                        <label class="col-sm-6 col-form-label text-right">Date de début : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[2]["Date_Debut"]; ?></label><br>
+                        <label class="col-sm-6 col-form-label text-right">Etablissement : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[2]["Etablissement"]; ?></label><br>
+                        <label class="col-sm-6 col-form-label text-right">Nbre heures Enseignement : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[2]["Heure_Enseignement"]; ?></label><br>
+                        <label class="col-sm-6 col-form-label text-right">Nbre heures Périphérique : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[2]["Heure_Peripherique"]; ?></label><br>
+                    </div>
+                    <div class="col-sm-5">
+                        <label class="col-sm-6 col-form-label text-right niveauMargin">Niveau : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[2]["Niveau"]; ?></label>
+                        <label class="col-sm-6 col-form-label text-right datefinMargin">Date de fin : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[2]["Date_Fin"]; ?></label><br>
+                        <label class="col-sm-6 col-form-label text-right">Ville : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[2]["Ville"]; ?></label><br>
+                        <label class="col-sm-6 col-form-label text-right">Taux horaire : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[2]["Taux"]; ?></label><br>
+
+                    </div>
+
+                </div> 
+
+                <?php } ?>
             </div>
         </div>
 
