@@ -1,11 +1,10 @@
 <script>
-    function recherche(e)
+    function recherche()
     {
-        if(e.keyCode === 13){
-            location.href= "<?php echo base_url('index.php/C_agent/recherche/');?>"+ e.value;
-        }
-        return false;
+        var value = document.getElementById('search_bar').value;
+        location.href = "recherche/"+ value;
     }
+
 
 </script>
 
@@ -18,7 +17,7 @@
         <div class="card-body">
             <nav class="navbar navbar-light bg-gradient-secondary btn">
                 <form class="form-inline ">
-                    <input class="form-control form-control-sm searchbar" onkeydown="recherche(value)" id="search_bar" type="text" placeholder="Recherche par nom" aria-label="Search">
+                    <input class="form-control form-control-sm searchbar" onkeypress=" if(event.key === 'Enter') recherche()"  id="search_bar" type="text" placeholder="Recherche par nom" aria-label="Search">
                     <i class="fas fa-search" aria-hidden="true"></i>
                 </form>
             </nav>
