@@ -221,3 +221,9 @@ body{
 	margin-right: 1rem;
 	width: 1333px!important;
 }
+.validationStyle{
+	background-color: grey;
+	border-radius: 5px;
+	padding: 5px;
+	color: whitesmoke;
+}
