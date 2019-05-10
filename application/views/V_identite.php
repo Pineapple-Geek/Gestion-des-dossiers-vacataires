@@ -24,9 +24,9 @@
                     </div>
 
                     <div class="col">
-                        <label class="col-sm-6 col-form-label text-right labelMarginTop">N° Sécurité Sociale:</label> <input class="input" type="text" name="SecuSoc" required>
-                        <label class="col-sm-6 col-form-label text-right">Adresse mail académique:</label> <input class="input" type="text" name="MailA" placeholder="(Facultatif)">
-                        <label class="col-sm-6 col-form-label text-right">Adresse mail perso:</label> <input class="input" type="text" name="MailP" required>
+                        <label class="col-sm-6 col-form-label text-right labelMarginTop">N° Sécurité Sociale:</label> <input class="input" type="number" name="SecuSoc" required>
+                        <label class="col-sm-6 col-form-label text-right">Adresse mail académique:</label> <input class="input" type="mail" name="MailA" placeholder="(Facultatif)">
+                        <label class="col-sm-6 col-form-label text-right">Adresse mail perso:</label> <input class="input" type="mail" name="MailP" required>
                     </div>
                 </div>
         </div>

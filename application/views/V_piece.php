@@ -88,11 +88,11 @@
 <?php   
         if(isset($_SESSION["identite"]) && isset($_SESSION["lettre1"]))
         {
-            ?> <script type="text/javascript"> document.getElementById('Suivant').disabled = false; </script> <?php 
+            ?> <script type="text/javascript"> document.getElementById('Suivant').type = "submit"; </script> <?php 
         } 
         else 
         {
-            ?> <script type="text/javascript"> document.getElementById('Suivant').disabled = true; </script> <?php 
+            ?> <script type="text/javascript"> document.getElementById('Suivant').type = "hidden"; </script> <?php 
             
             if (isset($_SESSION["identite"]))
             {
