@@ -10,6 +10,7 @@ class C_agent extends CI_Controller
         parent::__construct();
 
         $this->load->model('M_agent');
+        $this->load->model('M_detail');
     }
 
 

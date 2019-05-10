@@ -2,7 +2,7 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class M_agent extends CI_Model
+class M_detail extends CI_Model
 {
     public function __construct()
     {
