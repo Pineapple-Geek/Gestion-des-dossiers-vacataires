@@ -32,4 +32,17 @@ class C_agent extends CI_Controller
         $page = $this->load->view('V_agent', $data, true);
         $this->load->view('commun/V_template_user', array('contenu' => $page));
     }
+
+    public function detail($id)
+    {
+        $data['identite'] = $this->M_detail->select_all('identite', $id, 'id_Identite');
+        $data['contrat'] = $this->M_detail->select_all('contrat', $id, 'Identite_id_Identite');
+        $data['document'] = $this->M_detail->select_all('document', $id, 'Identite_id_Identite');
+        $data['lettre'] = $this->M_detail->select_all('lettre', $id, 'Identite_id_Identite');
+        $data['signature'] = $this->M_detail->select_all('signature', $id, 'Identite_id_Identite');
+
+        $data['title'] = "Vérification";
+        $page = $this->load->view('V_detail', $data, true);
+        $this->load->view('commun/V_template_user', array('contenu' => $page));
+    }
 }
