@@ -14,7 +14,7 @@ class M_agent extends CI_Model
         $query = $this->db->select('*')
             ->from('identite,verification')
             ->where ('verification.Identite_id_Identite = identite.id_Identite')
-            ->where ('verification.Etat', 1)
+            ->where ('verification.Etat', 0)
             ->get();
         return $query->result_array(); //conversion en tableau PH
     }
