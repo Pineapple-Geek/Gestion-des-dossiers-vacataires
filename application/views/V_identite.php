@@ -20,11 +20,11 @@
                         <label class="col-sm-4 col-form-label text-right">Ville:</label> <input class="input" type="text" name="Ville" required>
                         <label class="col-sm-4 col-form-label text-right">Code Postal:</label> <input class="input" type="number" name="CodeP" required>
                         <label class="col-sm-4 col-form-label text-right">Pays:</label> <input class="input" type="text" name="Pays" required>
-                        <label class="col-sm-4 col-form-label text-right">N°Tel:</label> <input class="input" type="number" name="Tel" required>
+                        <label class="col-sm-4 col-form-label text-right">N°Tel:</label> <input class="input" type="tel" name="Tel" pattern="[0-9]{10}" required>
                     </div>
 
                     <div class="col">
-                        <label class="col-sm-6 col-form-label text-right labelMarginTop">N° Sécurité Sociale:</label> <input class="input" type="number" name="SecuSoc" required>
+                        <label class="col-sm-6 col-form-label text-right labelMarginTop">N° Sécurité Sociale:</label> <input class="input" type="phone" pattern="[0-9]{15}" name="SecuSoc" required>
                         <label class="col-sm-6 col-form-label text-right">Adresse mail académique:</label> <input class="input" type="mail" name="MailA" placeholder="(Facultatif)">
                         <label class="col-sm-6 col-form-label text-right">Adresse mail perso:</label> <input class="input" type="mail" name="MailP" required>
                     </div>
