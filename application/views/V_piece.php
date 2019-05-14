@@ -9,6 +9,12 @@
                     <p class="card-text"><img class="cardImageValid" src="<?php echo base_url("/assets/images/"); ?>valider.png"></p>
                     <p class="card-text"><img class="cardImageValid" src="<?php echo base_url("/assets/images/"); ?>valider.png"></p>
                     <p class="card-text"><img class="cardImageValid" src="<?php echo base_url("/assets/images/"); ?>valider.png"></p>
+                    <?php if (isset($_SESSION["contrat"])){
+                        if (in_array('Enseignant', $_SESSION["contrat"])){?>
+                            <p class="card-text"><img class="cardImageValid" src="<?php echo base_url("/assets/images/"); ?>valider.png"></p>
+                    <?php }} ?>
+
+
                 </div>
 
                 <div class="d-inline-block col-sm-4">
@@ -16,7 +22,10 @@
                     <p class="card-text cardTextMargin">Une copie de l'attestation de sécurité sociale</p>
                     <p class="card-text cardTextMargin">Une copie recto verso de la carte d'identité</p>
                     <p class="card-text cardTextMargin">Un curriculum mis à jour</p>
-
+                    <?php if (isset($_SESSION["contrat"])){
+                        if (in_array('Enseignant', $_SESSION["contrat"])){?>
+                            <p class="card-text cardTextMargin">Accord de cumul d’activités</p>
+                        <?php }} ?>
                 </div>
 
                 <div class="d-inline-block col-sm-2 text-left">
@@ -24,7 +33,10 @@
                     <p class="card-text cardTextMargin2"><input class="ajouter" type="file" name="userfile2" required></p>
                     <p class="card-text cardTextMargin2"><input class="ajouter" type="file" name="userfile3" required></p>
                     <p class="card-text cardTextMargin2"><input class="ajouter" type="file" name="userfile4" required></p>
-
+                    <?php if (isset($_SESSION["contrat"])){
+                        if (in_array('Enseignant', $_SESSION["contrat"])){?>
+                            <p class="card-text cardTextMargin2"><input class="ajouter" type="file" name="userfile5" required></p>
+                        <?php }} ?>
                 </div>
 
             </div>
@@ -85,26 +97,26 @@
     </div>
 </form>
 
-<?php   
-        if(isset($_SESSION["identite"]) && isset($_SESSION["lettre1"]))
-        {
-            ?> <script type="text/javascript"> document.getElementById('Suivant').type = "submit"; </script> <?php 
-        } 
-        else 
-        {
-            ?> <script type="text/javascript"> document.getElementById('Suivant').type = "hidden"; </script> <?php 
-            
-            if (isset($_SESSION["identite"]))
-            {
-                echo '<script type="text/javascript">alert("Le formulaire \"Lettre d\'engagement\" et statut doit étre remplis!");</script>'; 
-            }
-            else if (isset($_SESSION["lettre1"]))
-            {
-                echo '<script type="text/javascript">alert("Le formulaire Identité / Contrat et statut doit étre remplis!");</script>'; 
-            }
-            else
-            {
-                echo '<script type="text/javascript">alert("Le formulaire \"Identité / Contrat et statut\" et \"Lettre d\'engagement\" doit étre remplis!");</script>'; 
-            }
-        }
+<?php
+if(isset($_SESSION["identite"]) && isset($_SESSION["lettre1"]))
+{
+    ?> <script type="text/javascript"> document.getElementById('Suivant').type = "submit"; </script> <?php
+}
+else
+{
+    ?> <script type="text/javascript"> document.getElementById('Suivant').type = "hidden"; </script> <?php
+
+    if (isset($_SESSION["identite"]))
+    {
+        echo '<script type="text/javascript">alert("Le formulaire \"Lettre d\'engagement\" et statut doit étre remplis!");</script>';
+    }
+    else if (isset($_SESSION["lettre1"]))
+    {
+        echo '<script type="text/javascript">alert("Le formulaire Identité / Contrat et statut doit étre remplis!");</script>';
+    }
+    else
+    {
+        echo '<script type="text/javascript">alert("Le formulaire \"Identité / Contrat et statut\" et \"Lettre d\'engagement\" doit étre remplis!");</script>';
+    }
+}
 ?>
