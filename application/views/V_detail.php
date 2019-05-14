@@ -72,31 +72,31 @@
 
                     <div class="col"> 
                         <label class="col-sm-6 col-form-label text-right">Administratif : </label><label class="col-sm-5 col-form-label text-left"><?php echo $contrat[0]["Administratif"]; ?></label><br>
-                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation14" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation14" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span>
+                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation15" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation15" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span>
                     </div>
 
                     <div class="col">
                         <label class="col-sm-3 col-form-label text-right">Statut : </label><label class="col-sm-9 col-form-label text-left"><?php echo $contrat[0]["Status"]; ?></label>
-                        <label class="col-sm-3 col-form-label text-right"></label><span class="validationStyle"><input name="validation13" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation13" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
+                        <label class="col-sm-3 col-form-label text-right"></label><span class="validationStyle"><input name="validation16" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation16" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
                     </div>
                     <div class="col">
                         <label class="col-sm-4 col-form-label text-right">Catégorie : </label><label class="col-sm-8 col-form-label text-left"><?php echo $contrat[0]["Categorie"]; ?></label>
-                        <label class="col-sm-4 col-form-label text-right"></label><span class="validationStyle"><input name="validation14" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation14" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span>
+                        <label class="col-sm-4 col-form-label text-right"></label><span class="validationStyle"><input name="validation17" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation17" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="col">
                         <p class="lieuAffect"><u> Lieu d'affectation principal :</u></p>
                         <label class="col-sm-4 col-form-label text-right labelMarginLeft2">Etablissement:</label> <label class="col-sm-7 col-form-label text-left"><?php echo $contrat[0]["Etablissement"]; ?></label>
-                        <label class="col-sm-4 col-form-label text-right"></label><span class="validationStyle"><input name="validation14" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation14" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span>
+                        <label class="col-sm-4 col-form-label text-right"></label><span class="validationStyle"><input name="validation18" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation18" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span>
                     </div>
                     <div class="col">
                         <label class="col-sm-3 col-form-label text-right labelMarginBottom">Ville:</label> <label class="col-sm-8 col-form-label text-left"><?php echo $contrat[0]["Ville_E"]; ?></label>
-                        <label class="col-sm-3 col-form-label text-right"></label><span class="validationStyle"><input name="validation14" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation14" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span>
+                        <label class="col-sm-3 col-form-label text-right"></label><span class="validationStyle"><input name="validation19" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation19" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span>
                     </div>
                     <div class="col">
                         <label class="col-sm-4 col-form-label text-right labelMarginBottom">Code Postal :</label> <label class="col-sm-7 col-form-label text-left"><?php echo $contrat[0]["Code_Postal_E"]; ?></label>
-                        <label class="col-sm-4 col-form-label text-right"></label><span class="validationStyle"><input name="validation14" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation14" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span>
+                        <label class="col-sm-4 col-form-label text-right"></label><span class="validationStyle"><input name="validation20" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation20" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span>
                     </div>
                 </div>
             </fieldset>
@@ -112,27 +112,27 @@
                     <div class="col-sm-7">
                         <h6 class="card-title cardBodyTitle"><u>Action 1 - SE1 :</u></h6>
                         <label class="col-sm-6 col-form-label text-right">Intitulé de l'action : </label> <label class="col-sm-4 col-form-label text-left"><?php echo $lettre[0]["Intitule_Action"]; ?></label>
-                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation1" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation1" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
+                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation21" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation21" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
                         <label class="col-sm-6 col-form-label text-right">Centre de production : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[0]["Centre"]; ?></label>
-                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation1" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation1" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
+                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation22" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation22" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
                         <label class="col-sm-6 col-form-label text-right">Date de début : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[0]["Date_Debut"]; ?></label>
-                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation1" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation1" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
+                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation23" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation23" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
                         <label class="col-sm-6 col-form-label text-right">Etablissement : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[0]["Etablissement"]; ?></label>
-                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation1" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation1" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
+                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation24" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation24" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
                         <label class="col-sm-6 col-form-label text-right">Nbre heures Enseignement : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[0]["Heure_Enseignement"]; ?></label>
-                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation1" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation1" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
+                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation25" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation25" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
                         <label class="col-sm-6 col-form-label text-right">Nbre heures Périphérique : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[0]["Heure_Peripherique"]; ?></label>
-                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation1" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation1" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
+                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation26" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation26" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
                     </div>
                     <div class="col-sm-5">
                         <label class="col-sm-6 col-form-label text-right niveauMargin">Niveau : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[0]["Niveau"]; ?></label>
-                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation1" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation1" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span>
+                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation27" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation27" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span>
                         <label class="col-sm-6 col-form-label text-right datefinMargin">Date de fin : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[0]["Date_Fin"]; ?></label>
-                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation1" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation1" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
+                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation28" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation28" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
                         <label class="col-sm-6 col-form-label text-right">Ville : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[0]["Ville"]; ?></label>
-                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation1" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation1" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
+                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation29" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation29" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
                         <label class="col-sm-6 col-form-label text-right">Taux horaire : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[0]["Taux"]; ?></label>
-                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation1" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation1" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
+                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation30" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation30" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
 
                     </div>
 
@@ -144,26 +144,26 @@
                     <div class="col-sm-7">
                         <h6 class="card-title cardBodyTitle"><u>Action 2 - SE2 :</u></h6>
                         <label class="col-sm-6 col-form-label text-right">Intitulé de l'action : </label> <label class="col-sm-4 col-form-label text-left"><?php echo $lettre[1]["Intitule_Action"]; ?></label>
-                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation1" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation1" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
+                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation31" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation31" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
                         <label class="col-sm-6 col-form-label text-right">Centre de production : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[1]["Centre"]; ?></label>
-                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation1" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation1" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
+                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation32" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation32" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
                         <label class="col-sm-6 col-form-label text-right">Date de début : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[1]["Date_Debut"]; ?></label>
-                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation1" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation1" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
+                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation33" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation33" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
                         <label class="col-sm-6 col-form-label text-right">Etablissement : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[1]["Etablissement"]; ?></label><br>
                         <label class="col-sm-6 col-form-label text-right">Nbre heures Enseignement : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[1]["Heure_Enseignement"]; ?></label>
-                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation1" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation1" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
+                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation34" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation34" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
                         <label class="col-sm-6 col-form-label text-right">Nbre heures Périphérique : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[1]["Heure_Peripherique"]; ?></label
-                            <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation1" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation1" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span>><br>
+                            <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation35" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation35" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span>><br>
                     </div>
                     <div class="col-sm-5">
                         <label class="col-sm-6 col-form-label text-right niveauMargin">Niveau : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[1]["Niveau"]; ?></label>
-                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation1" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation1" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span>
+                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation36" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation36" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span>
                         <label class="col-sm-6 col-form-label text-right datefinMargin">Date de fin : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[1]["Date_Fin"]; ?></label>
-                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation1" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation1" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
+                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation37" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation37" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
                         <label class="col-sm-6 col-form-label text-right">Ville : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[1]["Ville"]; ?></label>
-                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation1" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation1" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
+                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation38" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation38" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
                         <label class="col-sm-6 col-form-label text-right">Taux horaire : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[1]["Taux"]; ?></label>
-                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation1" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation1" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
+                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation39" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation39" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
 
                     </div>
 
@@ -178,27 +178,27 @@
                     <div class="col-sm-7">
                         <h6 class="card-title cardBodyTitle"><u>Action 2 - SE2 :</u></h6>
                         <label class="col-sm-6 col-form-label text-right">Intitulé de l'action : </label> <label class="col-sm-4 col-form-label text-left"><?php echo $lettre[1]["Intitule_Action"]; ?></label>
-                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation1" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation1" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
+                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation40" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation40" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
                         <label class="col-sm-6 col-form-label text-right">Centre de production : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[1]["Centre"]; ?></label>
-                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation1" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation1" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
+                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation41" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation41" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
                         <label class="col-sm-6 col-form-label text-right">Date de début : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[1]["Date_Debut"]; ?></label>
-                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation1" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation1" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
+                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation42" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation42" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
                         <label class="col-sm-6 col-form-label text-right">Etablissement : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[1]["Etablissement"]; ?></label>
-                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation1" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation1" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
+                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation43" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation43" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
                         <label class="col-sm-6 col-form-label text-right">Nbre heures Enseignement : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[1]["Heure_Enseignement"]; ?></label>
-                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation1" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation1" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
+                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation44" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation44" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
                         <label class="col-sm-6 col-form-label text-right">Nbre heures Périphérique : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[1]["Heure_Peripherique"]; ?></label>
-                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation1" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation1" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
+                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation45" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation45" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
                     </div>
                     <div class="col-sm-5">
                         <label class="col-sm-6 col-form-label text-right niveauMargin">Niveau : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[1]["Niveau"]; ?></label>
-                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation1" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation1" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span>
+                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation46" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation46" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span>
                         <label class="col-sm-6 col-form-label text-right datefinMargin">Date de fin : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[1]["Date_Fin"]; ?></label>
-                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation1" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation1" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
+                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation47" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation47" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
                         <label class="col-sm-6 col-form-label text-right">Ville : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[1]["Ville"]; ?></label>
-                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation1" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation1" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
+                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation48" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation48" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
                         <label class="col-sm-6 col-form-label text-right">Taux horaire : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[1]["Taux"]; ?></label>
-                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation1" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation1" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
+                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation49" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation49" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
 
                     </div>
 
@@ -209,27 +209,27 @@
                     <div class="col-sm-7">
                         <h6 class="card-title cardBodyTitle"><u>Action 3 - SE3 :</u></h6>
                         <label class="col-sm-6 col-form-label text-right">Intitulé de l'action : </label> <label class="col-sm-4 col-form-label text-left"><?php echo $lettre[2]["Intitule_Action"]; ?></label>
-                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation1" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation1" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
+                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation50" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation50" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
                         <label class="col-sm-6 col-form-label text-right">Centre de production : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[2]["Centre"]; ?></label>
-                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation1" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation1" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
+                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation51" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation51" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
                         <label class="col-sm-6 col-form-label text-right">Date de début : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[2]["Date_Debut"]; ?></label>
-                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation1" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation1" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
+                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation52" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation52" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
                         <label class="col-sm-6 col-form-label text-right">Etablissement : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[2]["Etablissement"]; ?></label>
-                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation1" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation1" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
+                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation53" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation53" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
                         <label class="col-sm-6 col-form-label text-right">Nbre heures Enseignement : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[2]["Heure_Enseignement"]; ?></label>
-                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation1" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation1" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
+                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation54" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation54" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
                         <label class="col-sm-6 col-form-label text-right">Nbre heures Périphérique : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[2]["Heure_Peripherique"]; ?></label>
-                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation1" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation1" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
+                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation55" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation55" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
                     </div>
                     <div class="col-sm-5">
                         <label class="col-sm-6 col-form-label text-right niveauMargin">Niveau : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[2]["Niveau"]; ?></label>
-                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation1" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation1" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span>
+                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation56" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation56" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span>
                         <label class="col-sm-6 col-form-label text-right datefinMargin">Date de fin : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[2]["Date_Fin"]; ?></label>
-                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation1" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation1" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
+                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation56" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation56" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
                         <label class="col-sm-6 col-form-label text-right">Ville : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[2]["Ville"]; ?></label>
-                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation1" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation1" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
+                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation57" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation57" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
                         <label class="col-sm-6 col-form-label text-right">Taux horaire : </label><label class="col-sm-4 col-form-label text-left"><?php echo $lettre[2]["Taux"]; ?></label>
-                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation1" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation1" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
+                        <label class="col-sm-6 col-form-label text-right"></label><span class="validationStyle"><input name="validation58" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation58" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span><br>
 
                     </div>
 
@@ -249,7 +249,7 @@
                     <img id="myImg1" class="card-img-top img-responsive img-thumbnail" src="<?php echo base_url($document[0]["Chemin"]); ?>">
                     <div class="card-body">
                       <h6 class="card-title">Relevé d'identité bancaire ou postal</h6>
-                      <label class="col-sm-2 col-form-label text-right"></label><span class="validationStyle"><input name="validation1" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation1" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span>
+                      <label class="col-sm-2 col-form-label text-right"></label><span class="validationStyle"><input name="validation59" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation59" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span>
                     </div>
                   </div>
 
@@ -257,7 +257,7 @@
                     <img id="myImg2" class="card-img-top img-responsive img-thumbnail" src="<?php echo base_url($document[1]["Chemin"]); ?>">
                     <div class="card-body">
                       <h6 class="card-title">Copie de l'attestation de sécurité sociale</h6>
-                      <label class="col-sm-2 col-form-label text-right"></label><span class="validationStyle"><input name="validation1" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation1" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span>
+                      <label class="col-sm-2 col-form-label text-right"></label><span class="validationStyle"><input name="validation60" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation60" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span>
                     </div>
                   </div>
 
@@ -265,7 +265,7 @@
                     <img id="myImg3" class="card-img-top img-responsive img-thumbnail" src="<?php echo base_url($document[2]["Chemin"]); ?>">
                     <div class="card-body">
                       <h6 class="card-title">Copie recto verso de la carte d'identité</h6>
-                      <label class="col-sm-2 col-form-label text-right"></label><span class="validationStyle"><input name="validation1" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation1" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span>
+                      <label class="col-sm-2 col-form-label text-right"></label><span class="validationStyle"><input name="validation61" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation61" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span>
                     </div>
                   </div>
 
@@ -273,7 +273,7 @@
                     <img id="myImg4" class="card-img-top img-responsive img-thumbnail" src="<?php echo base_url($document[3]["Chemin"]); ?>">
                     <div class="card-body">
                       <h6 class="card-title">Curriculum mis à jour</h6>
-                      <label class="col-sm-2 col-form-label text-right"></label><span class="validationStyle"><input name="validation1" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation1" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span>
+                      <label class="col-sm-2 col-form-label text-right"></label><span class="validationStyle"><input name="validation62" type="radio" value="Valide" onclick="HiddenDIV();" required>Valide</input> <input name="validation62" type="radio" value="NonValide" onclick="ShowDIV();" required>Non Valide</input></span>
                     </div>
                   </div>
 
