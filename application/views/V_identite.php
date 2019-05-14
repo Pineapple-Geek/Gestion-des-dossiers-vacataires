@@ -20,7 +20,7 @@
                         <label class="col-sm-4 col-form-label text-right">Ville:</label> <input class="input" type="text" name="Ville" required>
                         <label class="col-sm-4 col-form-label text-right">Code Postal:</label> <input class="input" type="number" name="CodeP" required>
                         <label class="col-sm-4 col-form-label text-right">Pays:</label> <input class="input" type="text" name="Pays" required>
-                        <label class="col-sm-4 col-form-label text-right">N°Tel:</label> <input class="input" type="tel" name="Tel" pattern="[0-9]{10}" required>
+                        <label class="col-sm-4 col-form-label text-right">Numéro de téléphone:</label> <input class="input" type="tel" name="Tel" pattern="[0-9]{10}" required>
                     </div>
 
                     <div class="col">
