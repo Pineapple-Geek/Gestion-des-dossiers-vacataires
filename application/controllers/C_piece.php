@@ -81,16 +81,33 @@ class C_piece extends CI_Controller {
             $this->lets_upload('userfile2');
             $this->lets_upload('userfile3');
             $this->lets_upload('userfile4');
+            if (isset($_SESSION["contrat"])){
+                  if (in_array('Enseignant', $_SESSION["contrat"])){
+                      $this->lets_upload('userfile5');
+            }}
+
+
 
             $Document1 = array("Type"=>"RIB", "Chemin"=>'./uploads/' . $_SESSION["identite"]["Nom"] . '_' . $_SESSION["identite"]["Prenom"] . '/' . $_FILES["userfile1"]["name"], "Identite_id_Identite"=>$ID[0]['id_Identite']);
             $Document2 = array("Type"=>"ASS", "Chemin"=>'./uploads/' . $_SESSION["identite"]["Nom"] . '_' . $_SESSION["identite"]["Prenom"] . '/' . $_FILES["userfile2"]["name"], "Identite_id_Identite"=>$ID[0]['id_Identite']);
             $Document3 = array("Type"=>"CI", "Chemin"=>'./uploads/' . $_SESSION["identite"]["Nom"] . '_' . $_SESSION["identite"]["Prenom"] . '/' . $_FILES["userfile3"]["name"], "Identite_id_Identite"=>$ID[0]['id_Identite']);
             $Document4 = array("Type"=>"CV", "Chemin"=>'./uploads/' . $_SESSION["identite"]["Nom"] . '_' . $_SESSION["identite"]["Prenom"] . '/' . $_FILES["userfile4"]["name"], "Identite_id_Identite"=>$ID[0]['id_Identite']);
+            if (isset($_SESSION["contrat"])){
+                if (in_array('Enseignant', $_SESSION["contrat"])){
+                    $Document5 = array("Type"=>"CA", "Chemin"=>'./uploads/' . $_SESSION["identite"]["Nom"] . '_' . $_SESSION["identite"]["Prenom"] . '/' . $_FILES["userfile5"]["name"], "Identite_id_Identite"=>$ID[0]['id_Identite']);
+
+                }}
+
 
             $this->M_formulaire->insert_BDD('document',$Document1);
             $this->M_formulaire->insert_BDD('document',$Document2);
             $this->M_formulaire->insert_BDD('document',$Document3);
             $this->M_formulaire->insert_BDD('document',$Document4);
+            if (isset($_SESSION["contrat"])){
+                if (in_array('Enseignant', $_SESSION["contrat"])){
+                    $this->M_formulaire->insert_BDD('document',$Document5);
+                }}
+
 
             $Verification = array("Etat"=>"0", "Status"=>"0", "Type"=>"", "Description"=>"", "Identite_id_Identite"=>$ID[0]['id_Identite']);
             $this->M_formulaire->insert_BDD('verification',$Verification);
