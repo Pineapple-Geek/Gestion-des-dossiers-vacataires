@@ -128,7 +128,7 @@
 </form>
 
 <script type="text/javascript">
-    window.onload = function() { alert("Veuillez vous munir des pièces justificative avant de remplir ce formulaire!"); }; 
+    window.onload = function() { alert("Veuillez vous munir des pièces justificatives avant de remplir ce formulaire!"); };
     function change(){
             var $groupe = document.getElementById('formEtat');
             $groupe.disabled = true;

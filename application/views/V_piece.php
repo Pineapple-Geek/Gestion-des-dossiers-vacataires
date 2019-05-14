@@ -108,7 +108,7 @@ else
 
     if (isset($_SESSION["identite"]))
     {
-        echo '<script type="text/javascript">alert("Le formulaire \"Lettre d\'engagement\" et statut doit étre remplis!");</script>';
+        echo '<script type="text/javascript">alert("Le formulaire \"Lettre d\'engagement\" et statut doit être remplis!");</script>';
     }
     else if (isset($_SESSION["lettre1"]))
     {
@@ -116,7 +116,7 @@ else
     }
     else
     {
-        echo '<script type="text/javascript">alert("Le formulaire \"Identité / Contrat et statut\" et \"Lettre d\'engagement\" doit étre remplis!");</script>';
+        echo '<script type="text/javascript">alert("Le formulaire \"Identité / Contrat et statut\" et \"Lettre d\'engagement\" doit être remplis!");</script>';
     }
 }
 ?>
