@@ -34,7 +34,7 @@
     <div class="row">
         <div class="card cardMargin cardcolor cardText">
             <div class="card-body cardBody2">
-                <p>Les informations recueillies font l'objet d'un traitement informatique déstinée à rédiger votre contrat de travail et assurer le suivi de l'activité du GRETA.
+                <p>Les informations recueillies font l'objet d'un traitement informatique destinée à rédiger votre contrat de travail et assurer le suivi de l'activité du GRETA.
                     Les destinataires des données sont le service de paye; le service des ressources humaines.
                     Conformément à la loi "informatique et libertés" , vous bénéficiez d'un droit d'accès et de rectification aux informations qui vous concernent.
                     Si vous souhaitez exercer ce droit et obtenir communication des informations vous concernant, veuillez vous adresser au service ressources humaines.
