@@ -2,7 +2,8 @@
     function recherche()
     {
         var value = document.getElementById('search_bar').value;
-        location.href = "recherche/"+ value;
+        location.href = 'C_agent/recherche/'+ value;
+
     }
 
 
@@ -16,10 +17,10 @@
 
         <div class="card-body">
             <nav class="navbar navbar-light bg-gradient-secondary btn">
-                <form class="form-inline ">
+                <div class="form-inline ">
                     <input class="form-control form-control-sm searchbar" onkeypress=" if(event.key === 'Enter') recherche()"  id="search_bar" type="text" placeholder="Recherche par nom" aria-label="Search">
                     <i class="fas fa-search" aria-hidden="true"></i>
-                </form>
+                </div>
             </nav>
             <table class="table tableSize">
                 <thead>
