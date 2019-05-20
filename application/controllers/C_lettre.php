@@ -23,7 +23,7 @@ class C_lettre extends CI_Controller {
 		$data['title'] = "Lettre d'engagement - Fiche de renseignement personnel";
 		$page = $this->load->view('V_lettre', $data, true);
         $pagescript = $this->load->view('commun/V_scriptmain', $data, true);
-        $this->load->view('commun/V_template', array('contenu' => $page 'scripts' => $pagescript));
+        $this->load->view('commun/V_template', array('contenu' => $page , 'scripts' => $pagescript));
 	}
     public function validation()
     {

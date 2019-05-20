@@ -31,7 +31,7 @@ class C_piece extends CI_Controller {
         $data['title'] = "Pièces jointes - Fiche de renseignement personnel";
         $page = $this->load->view('V_piece', $data, true);
         $pagescript = $this->load->view('commun/V_scriptmain', $data, true);
-        $this->load->view('commun/V_template', array('contenu' => $page 'scripts' => $pagescript));
+        $this->load->view('commun/V_template', array('contenu' => $page , 'scripts' => $pagescript));
     }
 
     public function upload_file() {
