@@ -254,7 +254,7 @@
                                 <label class="col-sm-2 col-form-label">Type:</label> <input id="TypeE" class="input form-control" type="text" name="TypeE" value="">
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-2 col-form-label">Explicatif:</label> <textarea class="input form-control" type="text" name="DescE" rows="4" cols="50"></textarea>
+                                <label class="col-sm-2 col-form-label">Explicatif:</label> <textarea id="DescE" class="input form-control" type="text" name="DescE" rows="4" cols="50" ></textarea>
                             </div>
                         </div>
                     </div>

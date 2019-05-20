@@ -5,6 +5,7 @@ var modal = document.getElementById('myModal');
 var modal2 = document.getElementById('ShowDIV');
 var errorStat = document.getElementById('ErrorStat');
 var TypeE = document.getElementById('TypeE');
+var DescE = document.getElementById('DescE');
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var img1 = document.getElementById('myImg1');
@@ -73,11 +74,13 @@ function ShowDIV(){
         TypeE.value = idNonValide;
         modal2.style.display = "flex";
         errorStat.value = 1;
+        DescE.setAttribute("required", ""); 
     }
     else
     {
         TypeE.value = "";
         modal2.style.display = "none";
-        errorStat.value = 0;  
+        errorStat.value = 0; 
+        DescE.removeAttribute("required");  
     } 
 }
