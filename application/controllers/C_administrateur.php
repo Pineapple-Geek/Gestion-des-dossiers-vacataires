@@ -18,14 +18,15 @@ class C_administrateur extends CI_Controller {
         $data['liste'] = $array_resultat;
         $data['title'] = "Menu administrateur";
         $page = $this->load->view('V_administrateur', $data, true);
-        $this->load->view('commun/V_template_user', array('contenu' => $page));
+        $pagescript = $this->load->view('commun/V_scriptmain', $data, true);
+        $this->load->view('commun/V_template_user', array('contenu' => $page, 'scripts' => $pagescript));
     }
 
     public function creation()
     {
         $data['title'] = "Création d'un nouveau compte";
         $page = $this->load->view('V_ajout_compte', $data, true);
-        $this->load->view('commun/V_template_user', array('contenu' => $page));
+        $this->load->view('commun/V_template_user', array('contenu' => $page, 'scripts' => $pagescript));
 
     }
 
@@ -44,7 +45,8 @@ class C_administrateur extends CI_Controller {
         $data['liste'] = $array_resultat;
         $data['title'] = "Menu administrateur";
         $page = $this->load->view('V_administrateur', $data, true);
-        $this->load->view('commun/V_template_user', array('contenu' => $page));
+        $pagescript = $this->load->view('commun/V_scriptmain', $data, true);
+        $this->load->view('commun/V_template_user', array('contenu' => $page, 'scripts' => $pagescript));
 
     }
 
@@ -55,7 +57,8 @@ class C_administrateur extends CI_Controller {
 
         $data['title'] = "Modification du compte";
         $page = $this->load->view('V_modification_compte', $data, true);
-        $this->load->view('commun/V_template_user', array('contenu' => $page));
+        $pagescript = $this->load->view('commun/V_scriptmain', $data, true);
+        $this->load->view('commun/V_template_user', array('contenu' => $page, 'scripts' => $pagescript));
     }
 
     public function modification_valider($id)
@@ -73,7 +76,8 @@ class C_administrateur extends CI_Controller {
 
         $data['title'] = "Modification du compte";
         $page = $this->load->view('V_administrateur', $data, true);
-        $this->load->view('commun/V_template_user', array('contenu' => $page));
+        $pagescript = $this->load->view('commun/V_scriptmain', $data, true);
+        $this->load->view('commun/V_template_user', array('contenu' => $page, 'scripts' => $pagescript));
     }
 
     public function suppression($primd)
@@ -83,7 +87,8 @@ class C_administrateur extends CI_Controller {
         $data['liste'] = $array_resultat;
         $data['title'] = "Menu administrateur";
         $page = $this->load->view('V_administrateur', $data, true);
-        $this->load->view('commun/V_template_user', array('contenu' => $page));
+        $pagescript = $this->load->view('commun/V_scriptmain', $data, true);
+        $this->load->view('commun/V_template_user', array('contenu' => $page, 'scripts' => $pagescript));
     }
     public function changePass($password) {
         $passwordhash = password_hash($password, PASSWORD_DEFAULT);

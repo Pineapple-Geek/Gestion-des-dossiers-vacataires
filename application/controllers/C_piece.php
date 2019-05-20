@@ -30,7 +30,8 @@ class C_piece extends CI_Controller {
 
         $data['title'] = "Pièces jointes - Fiche de renseignement personnel";
         $page = $this->load->view('V_piece', $data, true);
-        $this->load->view('commun/V_template', array('contenu' => $page));
+        $pagescript = $this->load->view('commun/V_scriptmain', $data, true);
+        $this->load->view('commun/V_template', array('contenu' => $page 'scripts' => $pagescript));
     }
 
     public function upload_file() {
@@ -118,7 +119,8 @@ class C_piece extends CI_Controller {
             $page = $this->load->view('V_success', $this->data, true);
             session_destroy();
         }
-        $this->load->view('commun/V_template_nobutton', array('contenu' => $page));
+        $pagescript = $this->load->view('commun/V_scriptmain', $data, true);
+        $this->load->view('commun/V_template_nobutton', array('contenu' => $page, 'scripts' => $pagescript));
     }
 
     public function lets_upload($field_name) {    // this function does the uploads

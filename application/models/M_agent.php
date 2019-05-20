@@ -25,7 +25,21 @@ class M_agent extends CI_Model
             ->where('identite.Nom',$primd)
             ->where ('verification.Identite_id_Identite = identite.id_Identite')
             ->get();
-        return $query->result_array(); //conversion en tableau PH
+        return $query->result_array(); //conversion en tableau PHP
+    }
+
+    public function update_by_id($primd,$ErrorStat,$TypeE,$DescE)
+    {
+        $tableau = array(
+            'Etat' => 1,
+            'Status' => $ErrorStat,
+            'Type' => $TypeE,
+            'Description' => $DescE
+        );
+
+        $query = $this->db->where('Identite_id_Identite', $primd)
+                          ->update('verification', $tableau);
+        return $query; //conversion en tableau PHP
     }
 
 }

@@ -22,7 +22,8 @@ class C_identite extends CI_Controller {
 	{
 		$data['title'] = "Identité / Contrat et statut - Fiche de renseignement personnel";
 		$page = $this->load->view('V_identite', $data, true);
-        $this->load->view('commun/V_template', array('contenu' => $page));
+    $pagescript = $this->load->view('commun/V_scriptmain', $data, true);
+    $this->load->view('commun/V_template', array('contenu' => $page, 'scripts' => $pagescript));
 	}
 
 	public function validation()

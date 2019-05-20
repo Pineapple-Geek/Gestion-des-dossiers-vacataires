@@ -16,7 +16,8 @@ class C_connexion extends CI_Controller {
 
         $data['title'] = "Connexion";
         $page = $this->load->view('V_connexion', $data, true);
-        $this->load->view('commun/V_template_nobutton', array('contenu' => $page));
+        $pagescript = $this->load->view('commun/V_scriptmain', $data, true);
+        $this->load->view('commun/V_template_nobutton', array('contenu' => $page, 'scripts' => $pagescript));
     }
     public function connexion() {
         $newLogin = $this->input->post('login');
